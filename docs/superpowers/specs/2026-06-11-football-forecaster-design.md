@@ -6,7 +6,26 @@
 
 ## 1. Goal
 
-Forecast every match of the 2026 FIFA World Cup well enough to win a Kicktipp-style office pool against football-nerd colleagues. Output is a calibrated scoreline distribution per match, plus an expected-value-optimal pick under the pool's scoring rule (default Kicktipp: 4 pts exact score / 3 pts correct goal difference / 2 pts correct winner).
+Forecast every match of the 2026 FIFA World Cup well enough to win the adidas internal "Forecaster" pool against football-nerd colleagues. Output is a calibrated scoreline distribution per match, plus an expected-value-optimal pick under the pool's scoring rule.
+
+### Scoring rule (confirmed from app)
+
+Per-match points are **fully additive**:
+
+| Component | Points | Condition |
+|---|---|---|
+| Correct outcome | +3 | `sign(predicted_diff) == sign(actual_diff)` |
+| Single correct score | +1 each team | predicted home goals == actual home goals, and/or away == away |
+| Correct goal difference | +1 | `predicted_home − predicted_away == actual_home − actual_away` |
+| **Max** | **6** | All four trigger (this is what the app calls "Perfect Score") |
+
+**Tournament bonus — Final Four prediction (editable until end of group stage):**
+
+| | Points | Condition |
+|---|---|---|
+| Correct team in correct position | +15 each | Team in correct semi-final slot |
+| Correct team in wrong position | +4 each | Team in semis but wrong slot |
+| **Max** | **60** | All four positions correct |
 
 The forecaster does not need to be state-of-the-art. It needs to be:
 
@@ -17,7 +36,6 @@ The forecaster does not need to be state-of-the-art. It needs to be:
 
 ## 2. Non-goals
 
-- Not modelling tournament progression (group winners, knockout simulation, trophy odds). Defer to v2.
 - Not building a paid data pipeline. Free public sources only.
 - Not replacing the model with an LLM. The LLM writes rationale and answers what-ifs; it never overrides the math.
 - Not a real-time in-play model. Predictions refresh hourly on match days; in-play probability shifts are out of scope.
@@ -97,17 +115,42 @@ For a fixture between teams A (notional home) and B (notional away):
 - λ_A, λ_B (for explanation/debugging)
 - Top-3 most-likely scorelines
 
-### 5.3 EV-optimal Kicktipp pick
+### 5.3 EV-optimal pick
 
-Given pool scoring rule `points(predicted, actual)`:
+Given the pool scoring rule `points(predicted, actual)` (see §1):
 
 ```
 EV(i, j) = Σ over (a, b) in 8×8 grid:  P(a, b) * points((i, j), (a, b))
 ```
 
-Pick `(i*, j*) = argmax EV(i, j)`. Default scoring is Kicktipp (4/3/2); the rule is configurable so other pools can be supported by changing one function.
+Pick `(i*, j*) = argmax EV(i, j)`. The scoring function is encapsulated in `picks.py::scoring_rule` so the pool's rules can be swapped if needed.
 
-This is the colleague-beating bit. For evenly matched fixtures, the EV-optimal pick is often slightly different from the modal scoreline (e.g. 2-1 over 1-0) because it covers more near-miss probability mass.
+This is the colleague-beating bit. The adidas Forecaster rule is unusually decomposable — outcome (3), per-team scores (+1 each), goal difference (+1) — which makes it especially friendly to EV optimization:
+
+- **Outcome dominates** (half the per-match max). Our W/D/L probabilities directly inform this.
+- **"Single correct score" is the highest-leverage hunting ground.** Predicting common per-team totals (0, 1, 2) earns +1 frequently. Expect the EV-optimal pick to skew toward common goal counts.
+- **No exact-score multiplier.** Predicting rare scorelines like 3:2 yields almost no upside vs. losing per-team-score probability mass. The model should pick conservatively on most matches.
+
+## 5.4 Final Four bonus optimization (v1.5)
+
+The pool awards up to 60 bonus points for predicting the four semi-finalists, editable until the end of the group stage (~2 weeks after kickoff). This is too valuable to ignore — 60 points is roughly 10 perfect match predictions.
+
+**Approach:** Monte Carlo tournament simulator.
+
+1. Take the current Dixon-Coles model.
+2. For each of N=20,000 simulations:
+   - For every remaining match, sample a scoreline from its grid.
+   - Resolve group standings (FIFA tie-breakers: points → GD → goals scored → head-to-head).
+   - Resolve knockouts (draw a winner from W/D/L probs; in knockouts, redistribute draw mass over W and L proportional to underlying strength to model extra-time + penalties).
+3. Tabulate, for each team, the probability they reach each semi-final slot.
+4. Solve the assignment problem: pick (slot → team) to maximize expected Final Four points under the +15/+4 rule.
+
+This runs once per pipeline execution during group stage and produces:
+
+- A recommended Final Four prediction with expected value.
+- Each team's probability of reaching the semis (top-8 list, displayed on dashboard).
+
+**Timing:** v1.5 ships during week 1 of the group stage. The first ~10 matches' worth of real results will sharpen the Elo ratings substantially before the lock deadline, so simulating later is genuinely better than simulating now.
 
 ## 6. Outputs
 
@@ -246,13 +289,18 @@ football-forecaster/
 ## 12. Open decisions for plan/implementation
 
 - Confirm Stefan's GitHub username (needed to set up the repo + Pages URL).
-- Confirm the colleague pool's exact scoring rule. Default is Kicktipp 4/3/2; if different, swap in `picks.py::scoring_rule`.
+- Scoring rule confirmed (§1) from the adidas Forecaster app. Implementation in `picks.py::scoring_rule`.
 - Pick the historical corpus version: vendor the Kaggle CSV at v1, or auto-fetch from a stable mirror. Vendoring is simpler and reproducible.
 
-## 13. Out of scope for v1, candidates for v2+
+## 13. Roadmap
 
-- Monte Carlo tournament simulation (group standings, knockout bracket, trophy odds).
+**v1 — before kickoff (this week):** match-by-match predictions, dashboard, prompt pack, GitHub Actions pipeline, EV-optimal pick under the adidas Forecaster scoring rule.
+
+**v1.5 — week 1 of group stage:** Monte Carlo tournament simulator → EV-optimal Final Four prediction (worth up to 60 bonus points). Lock deadline is end of group stage, so we have time to let real results sharpen the Elo before submitting.
+
+**v2 candidates:**
 - Player-level features (Mbappé-out as a numeric input rather than a rationale caveat).
 - Automated calibration monitoring with alerts.
 - Multi-tournament generalization.
 - Ensemble with a second model (e.g. xG-based or gradient boosting) for robustness.
+- Full trophy-odds dashboard (extension of the v1.5 simulator).
