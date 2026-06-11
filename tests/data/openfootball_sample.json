@@ -1,0 +1,27 @@
+{
+  "name": "World Cup 2026",
+  "rounds": [
+    {
+      "name": "Matchday 1",
+      "matches": [
+        {
+          "date": "2026-06-11",
+          "time": "20:00",
+          "team1": { "name": "Mexico", "code": "MEX" },
+          "team2": { "name": "South Africa", "code": "RSA" },
+          "score": { "ft": [1, 0] },
+          "stage": "GROUP",
+          "venue_country": "MEX"
+        },
+        {
+          "date": "2026-06-12",
+          "time": "18:00",
+          "team1": { "name": "Argentina", "code": "ARG" },
+          "team2": { "name": "France", "code": "FRA" },
+          "stage": "GROUP",
+          "venue_country": "USA"
+        }
+      ]
+    }
+  ]
+}
