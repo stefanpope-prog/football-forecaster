@@ -5,6 +5,8 @@ import json
 from pathlib import Path
 
 from forecaster.ingest import (
+    fetch_fixtures,
+    parse_football_data,
     parse_openfootball,
     read_fixtures_parquet,
     write_fixtures_parquet,
@@ -48,11 +50,6 @@ def test_fixtures_parquet_round_trip(tmp_data_dir):
 
 
 def test_parse_football_data_extracts_fixtures():
-    import json
-    from pathlib import Path
-
-    from forecaster.ingest import parse_football_data
-
     sample = json.loads(
         (Path(__file__).parent / "data" / "football_data_sample.json").read_text()
     )
@@ -70,18 +67,13 @@ def test_parse_football_data_extracts_fixtures():
 
 def test_fetch_fixtures_falls_back_when_no_api_key(monkeypatch):
     """If FOOTBALL_DATA_API_KEY missing, use OpenFootball."""
-    import json
-    from pathlib import Path
-
-    from forecaster.ingest import fetch_fixtures
-
     monkeypatch.delenv("FOOTBALL_DATA_API_KEY", raising=False)
     sample = json.loads(
         (Path(__file__).parent / "data" / "openfootball_sample.json").read_text()
     )
 
     class StubClient:
-        def get(self, url):
+        def get(self, url, headers=None):
             class Resp:
                 status_code = 200
                 def raise_for_status(self): pass
@@ -89,5 +81,86 @@ def test_fetch_fixtures_falls_back_when_no_api_key(monkeypatch):
             return Resp()
 
     fixtures = fetch_fixtures(client=StubClient())
+    assert len(fixtures) == 2
+    assert fixtures[0].home == "MEX"
+
+
+def test_fetch_fixtures_uses_football_data_when_keyed(monkeypatch):
+    """If FOOTBALL_DATA_API_KEY set, primary FD path is used."""
+    monkeypatch.setenv("FOOTBALL_DATA_API_KEY", "test-key")
+    sample = json.loads(
+        (Path(__file__).parent / "data" / "football_data_sample.json").read_text()
+    )
+
+    class FdStubClient:
+        captured_headers = None
+
+        def get(self, url, headers=None):
+            FdStubClient.captured_headers = headers
+            class Resp:
+                status_code = 200
+                def raise_for_status(self): pass
+                def json(self_inner): return sample
+            return Resp()
+
+    fixtures = fetch_fixtures(client=FdStubClient())
+    assert len(fixtures) == 2
+    assert fixtures[0].fixture_id == "2026-06-11-MEX-RSA"
+    assert FdStubClient.captured_headers == {"X-Auth-Token": "test-key"}
+
+
+def test_fetch_fixtures_falls_back_on_empty_football_data(monkeypatch):
+    """If FD returns an empty match list, fall through to OpenFootball."""
+    monkeypatch.setenv("FOOTBALL_DATA_API_KEY", "test-key")
+    of_sample = json.loads(
+        (Path(__file__).parent / "data" / "openfootball_sample.json").read_text()
+    )
+
+    class EmptyThenOfStubClient:
+        def __init__(self):
+            self.call = 0
+
+        def get(self, url, headers=None):
+            self.call += 1
+            class Resp:
+                status_code = 200
+                def raise_for_status(self_inner): pass
+                def json(self_inner):
+                    # First call (FD): empty matches; second (OF): real sample.
+                    if self.call == 1:
+                        return {"matches": []}
+                    return of_sample
+            return Resp()
+
+    fixtures = fetch_fixtures(client=EmptyThenOfStubClient())
+    assert len(fixtures) == 2
+    assert fixtures[0].home == "MEX"
+
+
+def test_fetch_fixtures_falls_back_on_football_data_http_error(monkeypatch):
+    """If FD raises an HTTPError, fall through to OpenFootball."""
+    import httpx
+
+    monkeypatch.setenv("FOOTBALL_DATA_API_KEY", "test-key")
+    of_sample = json.loads(
+        (Path(__file__).parent / "data" / "openfootball_sample.json").read_text()
+    )
+
+    class FailingThenOfStubClient:
+        def __init__(self):
+            self.call = 0
+
+        def get(self, url, headers=None):
+            self.call += 1
+            class Resp:
+                status_code = 200
+                def raise_for_status(self_inner):
+                    if self.call == 1:
+                        raise httpx.HTTPError("boom")
+
+                def json(self_inner): return of_sample
+            return Resp()
+
+    fixtures = fetch_fixtures(client=FailingThenOfStubClient())
     assert len(fixtures) == 2
     assert fixtures[0].home == "MEX"

@@ -28,7 +28,7 @@ def parse_openfootball(payload: dict[str, Any]) -> list[Fixture]:
         for match in round_.get("matches", []):
             try:
                 fixtures.append(_openfootball_match_to_fixture(match))
-            except (KeyError, ValueError, IndexError, TypeError) as e:
+            except (KeyError, ValueError, IndexError, TypeError, AttributeError) as e:
                 log.warning("Skipping malformed match %r: %s", match, e)
     return fixtures
 
@@ -78,6 +78,9 @@ def fetch_openfootball(client: httpx.Client | None = None) -> list[Fixture]:
 FOOTBALL_DATA_URL = "https://api.football-data.org/v4/competitions/WC/matches"
 
 # Minimal venue-string -> country mapping for the 16 host cities.
+# Best-effort substring match; FD venue strings are not stable schema.
+# A mis-tagged venue downgrades home-advantage accuracy by one country —
+# we accept that risk vs. maintaining a strict allowlist.
 _HOST_VENUE_COUNTRIES = {
     # USA
     "MetLife": "USA", "AT&T Stadium": "USA", "Arrowhead": "USA",
@@ -94,6 +97,7 @@ def _venue_country(venue_str: str | None) -> str:
     for needle, code in _HOST_VENUE_COUNTRIES.items():
         if needle.lower() in venue_str.lower():
             return code
+    log.debug("Unmapped venue %r — defaulting to USA", venue_str)
     return "USA"
 
 
@@ -126,23 +130,25 @@ def parse_football_data(payload: dict[str, Any]) -> list[Fixture]:
                 venue_country=_venue_country(m.get("venue")),
                 stage=_STAGE_MAP.get(m.get("stage", "GROUP_STAGE"), "GROUP"),
                 status=m.get("status", "SCHEDULED"),
-                actual_home_goals=ah if ah is not None else None,
-                actual_away_goals=aa if aa is not None else None,
+                actual_home_goals=ah,
+                actual_away_goals=aa,
             ))
-        except (KeyError, ValueError) as e:
+        except (KeyError, ValueError, IndexError, TypeError, AttributeError) as e:
             log.warning("Skipping malformed FD match %r: %s", m, e)
     return fixtures
 
 
 def fetch_football_data(client: httpx.Client) -> list[Fixture]:
     """Live fetch from football-data.org. Requires FOOTBALL_DATA_API_KEY."""
-    api_key = os.environ["FOOTBALL_DATA_API_KEY"]
+    api_key = os.environ.get("FOOTBALL_DATA_API_KEY")
+    if not api_key:
+        raise RuntimeError("FOOTBALL_DATA_API_KEY is not set")
     resp = client.get(FOOTBALL_DATA_URL, headers={"X-Auth-Token": api_key})
     resp.raise_for_status()
     return parse_football_data(resp.json())
 
 
-def fetch_fixtures(client: Any | None = None) -> list[Fixture]:
+def fetch_fixtures(client: httpx.Client | None = None) -> list[Fixture]:
     """Primary: football-data.org. Fallback: OpenFootball.
 
     `client` is an httpx-compatible client; injected for tests. When omitted,
@@ -154,7 +160,7 @@ def fetch_fixtures(client: Any | None = None) -> list[Fixture]:
     return _fetch_fixtures_with_client(client)
 
 
-def _fetch_fixtures_with_client(client: Any) -> list[Fixture]:
+def _fetch_fixtures_with_client(client: httpx.Client) -> list[Fixture]:
     api_key = os.environ.get("FOOTBALL_DATA_API_KEY")
     if api_key:
         try:
@@ -162,7 +168,7 @@ def _fetch_fixtures_with_client(client: Any) -> list[Fixture]:
             if fixtures:
                 log.info("Fetched %d fixtures from football-data.org", len(fixtures))
                 return fixtures
-        except (httpx.HTTPError, KeyError) as e:
+        except (httpx.HTTPError, RuntimeError) as e:
             log.warning("football-data.org failed (%s); falling back to OpenFootball", e)
     return fetch_openfootball(client)
 
