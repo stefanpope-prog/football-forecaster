@@ -45,3 +45,49 @@ def test_fixtures_parquet_round_trip(tmp_data_dir):
 
     loaded = read_fixtures_parquet(path)
     assert loaded == fixtures
+
+
+def test_parse_football_data_extracts_fixtures():
+    import json
+    from pathlib import Path
+
+    from forecaster.ingest import parse_football_data
+
+    sample = json.loads(
+        (Path(__file__).parent / "data" / "football_data_sample.json").read_text()
+    )
+    fixtures = parse_football_data(sample)
+
+    assert len(fixtures) == 2
+    f1, f2 = fixtures
+    assert f1.fixture_id == "2026-06-11-MEX-RSA"
+    assert f1.status == "FINISHED"
+    assert f1.actual_home_goals == 1
+    assert f1.venue_country == "MEX"           # parsed from venue string
+    assert f2.venue_country == "USA"
+    assert f2.utc_kickoff.hour == 18
+
+
+def test_fetch_fixtures_falls_back_when_no_api_key(monkeypatch):
+    """If FOOTBALL_DATA_API_KEY missing, use OpenFootball."""
+    import json
+    from pathlib import Path
+
+    from forecaster.ingest import fetch_fixtures
+
+    monkeypatch.delenv("FOOTBALL_DATA_API_KEY", raising=False)
+    sample = json.loads(
+        (Path(__file__).parent / "data" / "openfootball_sample.json").read_text()
+    )
+
+    class StubClient:
+        def get(self, url):
+            class Resp:
+                status_code = 200
+                def raise_for_status(self): pass
+                def json(self_inner): return sample
+            return Resp()
+
+    fixtures = fetch_fixtures(client=StubClient())
+    assert len(fixtures) == 2
+    assert fixtures[0].home == "MEX"
