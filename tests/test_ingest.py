@@ -4,7 +4,11 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from forecaster.ingest import parse_openfootball
+from forecaster.ingest import (
+    parse_openfootball,
+    read_fixtures_parquet,
+    write_fixtures_parquet,
+)
 
 
 def test_parse_openfootball_extracts_fixtures():
@@ -30,15 +34,7 @@ def test_parse_openfootball_extracts_fixtures():
     assert f2.actual_home_goals is None
 
 
-def test_fixtures_parquet_round_trip(tmp_data_dir, monkeypatch):
-    import json
-    from pathlib import Path
-    from forecaster.ingest import (
-        parse_openfootball,
-        read_fixtures_parquet,
-        write_fixtures_parquet,
-    )
-
+def test_fixtures_parquet_round_trip(tmp_data_dir):
     sample = json.loads(
         (Path(__file__).parent / "data" / "openfootball_sample.json").read_text()
     )

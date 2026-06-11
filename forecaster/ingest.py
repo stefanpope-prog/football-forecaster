@@ -2,8 +2,6 @@
 from __future__ import annotations
 
 import datetime as dt
-import io
-import json
 import logging
 from pathlib import Path
 from typing import Any
@@ -28,15 +26,17 @@ def parse_openfootball(payload: dict[str, Any]) -> list[Fixture]:
     for round_ in payload.get("rounds", []):
         for match in round_.get("matches", []):
             try:
-                fixtures.append(_match_to_fixture(match))
-            except (KeyError, ValueError) as e:
+                fixtures.append(_openfootball_match_to_fixture(match))
+            except (KeyError, ValueError, IndexError, TypeError) as e:
                 log.warning("Skipping malformed match %r: %s", match, e)
     return fixtures
 
 
-def _match_to_fixture(match: dict[str, Any]) -> Fixture:
+def _openfootball_match_to_fixture(match: dict[str, Any]) -> Fixture:
     date_str = match["date"]
     time_str = match.get("time", "12:00")
+    # OpenFootball "time" is naive; we tag it UTC as a best effort.
+    # football-data.org (Task 4) supplies real UTC and supersedes this when keyed.
     kickoff = dt.datetime.fromisoformat(f"{date_str}T{time_str}").replace(
         tzinfo=dt.timezone.utc
     )
@@ -54,7 +54,7 @@ def _match_to_fixture(match: dict[str, Any]) -> Fixture:
         utc_kickoff=kickoff,
         home=home_code,
         away=away_code,
-        venue_country=match.get("venue_country", "USA"),  # default to USA host
+        venue_country=match.get("venue_country", "USA"),  # 2026 hosts USA/CAN/MEX
         stage=match.get("stage", "GROUP"),
         status=status,
         actual_home_goals=ah,
@@ -64,10 +64,14 @@ def _match_to_fixture(match: dict[str, Any]) -> Fixture:
 
 def fetch_openfootball(client: httpx.Client | None = None) -> list[Fixture]:
     """Live fetch from OpenFootball. Used by the pipeline."""
-    client = client or httpx.Client(timeout=30.0)
-    resp = client.get(OPENFOOTBALL_URL)
-    resp.raise_for_status()
-    return parse_openfootball(resp.json())
+    if client is not None:
+        resp = client.get(OPENFOOTBALL_URL)
+        resp.raise_for_status()
+        return parse_openfootball(resp.json())
+    with httpx.Client(timeout=30.0) as owned:
+        resp = owned.get(OPENFOOTBALL_URL)
+        resp.raise_for_status()
+        return parse_openfootball(resp.json())
 
 
 def write_fixtures_parquet(fixtures: list[Fixture], path: Path | None = None) -> Path:
