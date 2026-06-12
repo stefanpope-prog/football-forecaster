@@ -4,6 +4,11 @@
 
 See `docs/superpowers/specs/2026-06-11-football-forecaster-design.md` for the design.
 
+## Live
+
+Dashboard: https://stefanpope-prog.github.io/football-forecaster/
+Prompt pack: https://stefanpope-prog.github.io/football-forecaster/prompt-pack.md
+
 ## Run locally
 
 ```bash
