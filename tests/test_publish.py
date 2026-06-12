@@ -47,3 +47,23 @@ def test_write_per_fixture_json_creates_file_per_fixture(tmp_data_dir):
     assert payload["recommended_pick"] == [1, 0]
     assert "rationale" in payload
     assert payload["w_d_l"]["draw"] >= 0
+
+
+def test_write_html_dashboard_renders_today_card(tmp_data_dir):
+    from forecaster.publish import write_html_dashboard
+
+    fixture = _make_fixture()
+    prediction = _make_pred()
+    rationale = {fixture.fixture_id: "MEX favoured at home; weather hot."}
+
+    out = write_html_dashboard(
+        [fixture], [prediction], rationale,
+        now_utc=dt.datetime(2026, 6, 11, 12, 0, tzinfo=dt.timezone.utc),
+    )
+    assert out.exists()
+    html = out.read_text()
+    assert "MEX" in html and "RSA" in html
+    assert "*" in html
+    assert "TODAY" in html
+    assert "Open in Claude Chat" in html
+    assert "MEX favoured at home" in html

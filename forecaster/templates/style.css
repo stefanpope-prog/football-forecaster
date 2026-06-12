@@ -1,0 +1,78 @@
+:root {
+  --bg: #0d1117;
+  --card: #161b22;
+  --fg: #e6edf3;
+  --muted: #8b949e;
+  --accent: #ff6b35;
+  --win: #3fb950;
+  --draw: #d29922;
+  --loss: #f85149;
+  --border: #30363d;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #ffffff;
+    --card: #f6f8fa;
+    --fg: #1f2328;
+    --muted: #59636e;
+    --accent: #cc4b13;
+    --win: #1a7f37;
+    --draw: #9a6700;
+    --loss: #cf222e;
+    --border: #d0d7de;
+  }
+}
+* { box-sizing: border-box; }
+html, body {
+  margin: 0; padding: 0;
+  background: var(--bg); color: var(--fg);
+  font: 16px/1.5 -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+}
+.container { max-width: 480px; margin: 0 auto; padding: 16px; }
+header h1 { font-size: 18px; margin: 8px 0 4px; }
+header .meta { color: var(--muted); font-size: 13px; margin-bottom: 16px; }
+.day-heading {
+  font-size: 13px; text-transform: uppercase; letter-spacing: 1px;
+  color: var(--muted); margin: 24px 0 8px;
+}
+.card {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 12px; padding: 16px; margin-bottom: 12px;
+}
+.matchup { display: flex; justify-content: space-between; align-items: center; }
+.matchup .team { font-weight: 600; font-size: 18px; }
+.matchup .vs { color: var(--muted); font-size: 13px; }
+.row { display: flex; justify-content: space-between; margin: 6px 0; font-size: 14px; }
+.row .label { color: var(--muted); }
+.pick { font-weight: 700; color: var(--accent); }
+.wdl-bar {
+  display: flex; height: 8px; border-radius: 4px; overflow: hidden;
+  margin: 8px 0;
+}
+.wdl-bar .w { background: var(--win); }
+.wdl-bar .d { background: var(--draw); }
+.wdl-bar .l { background: var(--loss); }
+.scoreline-row {
+  display: flex; align-items: center; font-size: 13px;
+  margin: 2px 0; gap: 8px;
+}
+.scoreline-row .score { width: 36px; font-variant-numeric: tabular-nums; }
+.scoreline-row .pct { width: 36px; color: var(--muted); }
+.scoreline-row .bar { flex: 1; height: 6px; background: var(--border); border-radius: 3px; }
+.scoreline-row .bar > span { display: block; height: 100%; background: var(--accent); border-radius: 3px; }
+.why { font-size: 14px; color: var(--fg); margin-top: 12px; }
+.why .caveats { color: var(--muted); font-size: 13px; margin-top: 4px; }
+.btn {
+  display: inline-block; min-height: 44px; line-height: 44px;
+  background: var(--accent); color: white; border: none;
+  border-radius: 8px; padding: 0 16px; font-weight: 600;
+  text-decoration: none; cursor: pointer; margin-top: 12px;
+  width: 100%; text-align: center;
+}
+.btn:active { opacity: 0.8; }
+details.past { margin-top: 24px; }
+details.past summary {
+  font-size: 13px; text-transform: uppercase; letter-spacing: 1px;
+  color: var(--muted); cursor: pointer;
+}
+.accuracy { font-size: 13px; color: var(--muted); margin: 8px 0; }

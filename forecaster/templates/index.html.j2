@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0d1117">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Forecaster</title>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Forecaster</h1>
+    <div class="meta">Updated {{ generated_at_utc }} UTC · Model accuracy: {{ accuracy }}</div>
+  </header>
+
+  {% for day in upcoming_days %}
+    <div class="day-heading">{{ day.label }}</div>
+    {% for card in day.cards %}
+      <article class="card" id="{{ card.fixture_id }}">
+        <div class="matchup">
+          <span class="team">{{ card.home }}</span>
+          <span class="vs">{{ card.kickoff_local }}</span>
+          <span class="team">{{ card.away }}</span>
+        </div>
+        <div class="row"><span class="label">My pick</span><span class="pick">{{ card.pick[0] }}-{{ card.pick[1] }} *</span></div>
+        <div class="row"><span class="label">Most likely</span><span>{{ card.most_likely[0] }}-{{ card.most_likely[1] }} ({{ card.most_likely_pct }}%)</span></div>
+        <div class="row"><span class="label">W / D / L</span><span>{{ card.w_pct }}% / {{ card.d_pct }}% / {{ card.l_pct }}%</span></div>
+        <div class="wdl-bar">
+          <div class="w" style="width: {{ card.w_pct }}%"></div>
+          <div class="d" style="width: {{ card.d_pct }}%"></div>
+          <div class="l" style="width: {{ card.l_pct }}%"></div>
+        </div>
+        <div class="row"><span class="label">Top scorelines</span><span></span></div>
+        {% for sl in card.top_scorelines %}
+          <div class="scoreline-row">
+            <span class="score">{{ sl.h }}-{{ sl.a }}</span>
+            <span class="pct">{{ sl.pct }}%</span>
+            <span class="bar"><span style="width: {{ sl.bar_pct }}%"></span></span>
+          </div>
+        {% endfor %}
+        <div class="why">
+          <strong>Why</strong><br>{{ card.why }}
+        </div>
+        <button class="btn" data-fixture="{{ card.fixture_id }}" onclick="copyAndOpen(this)">Open in Claude Chat</button>
+      </article>
+    {% endfor %}
+  {% endfor %}
+
+  {% if past_cards %}
+    <details class="past">
+      <summary>Past matches ({{ past_cards|length }})</summary>
+      <p class="accuracy">Outcome: {{ accuracy_outcome }} · Total points so far: {{ total_points }}</p>
+      {% for card in past_cards %}
+        <article class="card">
+          <div class="matchup">
+            <span class="team">{{ card.home }}</span>
+            <span class="vs">{{ card.actual[0] }}-{{ card.actual[1] }}</span>
+            <span class="team">{{ card.away }}</span>
+          </div>
+          <div class="row"><span class="label">Picked</span><span>{{ card.pick[0] }}-{{ card.pick[1] }}</span></div>
+          <div class="row"><span class="label">Points</span><span class="pick">+{{ card.points }}</span></div>
+        </article>
+      {% endfor %}
+    </details>
+  {% endif %}
+</div>
+
+<script type="application/json" id="briefings">{{ briefings_json|safe }}</script>
+<script>
+async function copyAndOpen(btn) {
+  const id = btn.dataset.fixture;
+  const briefings = JSON.parse(document.getElementById('briefings').textContent);
+  const text = briefings[id];
+  if (!text) return;
+  try {
+    await navigator.clipboard.writeText(text);
+    btn.textContent = "Copied - opening Claude...";
+  } catch (e) {
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    ta.remove();
+    btn.textContent = "Copied - opening Claude...";
+  }
+  setTimeout(() => window.open('https://claude.ai/new', '_blank'), 400);
+}
+</script>
+</body>
+</html>
