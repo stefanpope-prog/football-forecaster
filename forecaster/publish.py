@@ -245,3 +245,52 @@ def write_html_dashboard(
     out.write_text(html)
     shutil.copy(config.TEMPLATES_DIR / "style.css", config.DOCS_DIR / "style.css")
     return out
+
+
+def write_prompt_pack(
+    fixtures: list[Fixture],
+    predictions: list[Prediction],
+    rationale: dict[str, str],
+    now_utc: dt.datetime | None = None,
+) -> Path:
+    """Render `docs/prompt-pack.md`."""
+    now_utc = now_utc or dt.datetime.now(dt.timezone.utc)
+    pred_by_id = {p.fixture_id: p for p in predictions}
+
+    rows = []
+    for f in sorted(fixtures, key=lambda f: f.utc_kickoff):
+        if f.status == "FINISHED" or f.fixture_id not in pred_by_id:
+            continue
+        p = pred_by_id[f.fixture_id]
+        sg = p.score_grid
+        rows.append({
+            "home": f.home, "away": f.away,
+            "stage": f.stage,
+            "kickoff_label": f.utc_kickoff.strftime("%a %d %b %H:%M UTC"),
+            "pick": list(p.recommended_pick),
+            "ev": f"{p.expected_points:.2f}",
+            "w_pct": _percent(sg.win_prob()),
+            "d_pct": _percent(sg.draw_prob()),
+            "l_pct": _percent(sg.loss_prob()),
+            "lambda_home": f"{p.lambda_home:.2f}",
+            "lambda_away": f"{p.lambda_away:.2f}",
+            "top_scorelines": [
+                {"h": s[0], "a": s[1], "pct": _percent(prob)}
+                for s, prob in p.top_scorelines
+            ],
+            "why": rationale.get(f.fixture_id, "-"),
+        })
+
+    env = Environment(
+        loader=FileSystemLoader(config.TEMPLATES_DIR),
+        autoescape=False,
+    )
+    template = env.get_template("prompt-pack.md.j2")
+    md = template.render(
+        generated_at_utc=now_utc.strftime("%Y-%m-%d %H:%M"),
+        fixtures=rows,
+    )
+    config.DOCS_DIR.mkdir(parents=True, exist_ok=True)
+    out = config.DOCS_DIR / "prompt-pack.md"
+    out.write_text(md)
+    return out

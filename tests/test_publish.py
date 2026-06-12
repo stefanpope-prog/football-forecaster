@@ -67,3 +67,19 @@ def test_write_html_dashboard_renders_today_card(tmp_data_dir):
     assert "TODAY" in html
     assert "Open in Claude Chat" in html
     assert "MEX favoured at home" in html
+
+
+def test_write_prompt_pack_includes_rule_and_fixtures(tmp_data_dir):
+    from forecaster.publish import write_prompt_pack
+
+    fixture = _make_fixture()
+    prediction = _make_pred()
+    rationale = {fixture.fixture_id: "MEX strong at home."}
+
+    out = write_prompt_pack([fixture], [prediction], rationale)
+    text = out.read_text()
+    assert "Scoring rule" in text
+    assert "MEX vs RSA" in text
+    assert "Recommended pick" in text
+    assert "MEX strong at home." in text
+    assert "+3" in text and "+1 each" in text
