@@ -1,27 +1,31 @@
 {
   "name": "World Cup 2026",
-  "rounds": [
+  "matches": [
     {
-      "name": "Matchday 1",
-      "matches": [
-        {
-          "date": "2026-06-11",
-          "time": "20:00",
-          "team1": { "name": "Mexico", "code": "MEX" },
-          "team2": { "name": "South Africa", "code": "RSA" },
-          "score": { "ft": [1, 0] },
-          "stage": "GROUP",
-          "venue_country": "MEX"
-        },
-        {
-          "date": "2026-06-12",
-          "time": "18:00",
-          "team1": { "name": "Argentina", "code": "ARG" },
-          "team2": { "name": "France", "code": "FRA" },
-          "stage": "GROUP",
-          "venue_country": "USA"
-        }
-      ]
+      "round": "Matchday 1",
+      "date": "2026-06-11",
+      "time": "20:00 UTC-6",
+      "team1": "Mexico",
+      "team2": "South Africa",
+      "score": { "ft": [1, 0], "ht": [1, 0] },
+      "group": "Group A",
+      "ground": "Mexico City"
+    },
+    {
+      "round": "Matchday 1",
+      "date": "2026-06-12",
+      "time": "18:00",
+      "team1": "Argentina",
+      "team2": "France",
+      "group": "Group D",
+      "ground": "New York New Jersey"
+    },
+    {
+      "round": "Round of 16",
+      "date": "2026-06-29",
+      "team1": "1A",
+      "team2": "2B",
+      "ground": "Dallas"
     }
   ]
 }

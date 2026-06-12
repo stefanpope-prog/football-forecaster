@@ -11,6 +11,7 @@ import pandas as pd
 from forecaster import config
 from forecaster.form import summarise_all
 from forecaster.ingest import (
+    country_to_tla,
     fetch_fixtures,
     fetch_historical_results,
     write_fixtures_parquet,
@@ -56,14 +57,29 @@ def run_pipeline(force: bool = False) -> None:
 
     log.info("ingest: historical")
     history = fetch_historical_results()
+    # Normalise history team names to FIFA TLAs so they share a key space with
+    # fixtures and the Elo seed. Rows with unmappable countries are dropped —
+    # most are minor or non-FIFA teams that don't affect WC predictions.
+    history = history.assign(
+        home=history["home"].map(country_to_tla),
+        away=history["away"].map(country_to_tla),
+    )
+    history = history[
+        (history["home"].str.len() == 3) & (history["away"].str.len() == 3)
+    ].copy()
 
     log.info("ratings")
+    # Seed is the curated tournament-ready Elo (eloratings.net snapshot).
+    # We deliberately do NOT replay 150 years of history through it — that
+    # over-writes the FIFA-strength prior. Instead, we only patch the seed
+    # with WC matches that have already finished this tournament.
     seed = init_elo()
     finished_rows = []
     for f in fixtures:
         if f.status == "FINISHED" and f.actual_home_goals is not None:
             finished_rows.append({
-                "date": pd.Timestamp(f.utc_kickoff),
+                # Drop tz so this concats cleanly with the tz-naive history corpus.
+                "date": pd.Timestamp(f.utc_kickoff).tz_localize(None),
                 "home": f.home, "away": f.away,
                 "home_goals": f.actual_home_goals,
                 "away_goals": f.actual_away_goals,
@@ -71,12 +87,9 @@ def run_pipeline(force: bool = False) -> None:
             })
     finished = pd.DataFrame(finished_rows)
     if len(finished):
-        seed = update_elo_from_results(seed, finished, k=30.0)
-    elo = update_elo_from_results(
-        seed,
-        pd.concat([history, finished], ignore_index=True) if len(finished) else history,
-        k=15.0,
-    )
+        elo = update_elo_from_results(seed, finished, k=30.0)
+    else:
+        elo = dict(seed)
     write_elo_parquet(elo)
 
     log.info("model: fit")
