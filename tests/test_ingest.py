@@ -164,3 +164,33 @@ def test_fetch_fixtures_falls_back_on_football_data_http_error(monkeypatch):
     fixtures = fetch_fixtures(client=FailingThenOfStubClient())
     assert len(fixtures) == 2
     assert fixtures[0].home == "MEX"
+
+
+def test_load_historical_csv_normalizes_columns(tmp_path):
+    from forecaster.ingest import load_historical_csv
+
+    src = tmp_path / "results.csv"
+    src.write_text(
+        "date,home_team,away_team,home_score,away_score,tournament,city,country,neutral\n"
+        "2024-06-15,Germany,Scotland,5,1,UEFA Euro,Munich,Germany,FALSE\n"
+        "2024-06-22,Spain,Italy,1,0,UEFA Euro,Gelsenkirchen,Germany,TRUE\n"
+    )
+    df = load_historical_csv(src)
+
+    assert list(df.columns) == [
+        "date", "home", "away", "home_goals", "away_goals", "tournament", "neutral"
+    ]
+    assert len(df) == 2
+    assert df.iloc[0]["home"] == "Germany"
+    assert df.iloc[0]["home_goals"] == 5
+    assert bool(df.iloc[1]["neutral"]) is True
+    assert bool(df.iloc[0]["neutral"]) is False
+
+
+def test_country_to_tla_resolves_known_names():
+    from forecaster.ingest import country_to_tla
+
+    assert country_to_tla("Germany") == "GER"
+    assert country_to_tla("United States") == "USA"
+    assert country_to_tla("South Korea") == "KOR"
+    assert country_to_tla("Mexico") == "MEX"

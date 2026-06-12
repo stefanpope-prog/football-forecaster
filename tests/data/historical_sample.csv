@@ -1,0 +1,6 @@
+date,home_team,away_team,home_score,away_score,tournament,city,country,neutral
+2024-06-15,Germany,Scotland,5,1,UEFA Euro,Munich,Germany,FALSE
+2024-06-16,Argentina,Canada,2,0,Copa America,Atlanta,United States,TRUE
+2024-06-22,Spain,Italy,1,0,UEFA Euro,Gelsenkirchen,Germany,TRUE
+2024-07-14,Spain,England,2,1,UEFA Euro,Berlin,Germany,TRUE
+2024-07-14,Argentina,Colombia,1,0,Copa America,Miami,United States,TRUE

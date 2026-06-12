@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import datetime as dt
+import io
 import logging
 import os
 from pathlib import Path
@@ -19,6 +20,31 @@ log = logging.getLogger(__name__)
 OPENFOOTBALL_URL = (
     "https://raw.githubusercontent.com/openfootball/world-cup.json/master/2026/wc.json"
 )
+
+HISTORICAL_URL = (
+    "https://raw.githubusercontent.com/martj42/international_results/master/results.csv"
+)
+
+# Country-to-TLA mapping for the historical corpus.
+# Source: ISO + FIFA TLA conventions; manually curated for the names that appear
+# in martj42/international_results.
+_COUNTRY_TLA: dict[str, str] = {
+    "Argentina": "ARG", "Australia": "AUS", "Austria": "AUT", "Belgium": "BEL",
+    "Brazil": "BRA", "Cameroon": "CMR", "Canada": "CAN", "Chile": "CHI",
+    "Colombia": "COL", "Costa Rica": "CRC", "Croatia": "CRO", "Czech Republic": "CZE",
+    "Czechia": "CZE", "Denmark": "DEN", "Ecuador": "ECU", "Egypt": "EGY",
+    "England": "ENG", "France": "FRA", "Germany": "GER", "Ghana": "GHA",
+    "Greece": "GRE", "Honduras": "HON", "Iceland": "ISL", "Iran": "IRN",
+    "Italy": "ITA", "Ivory Coast": "CIV", "Japan": "JPN", "Mexico": "MEX",
+    "Morocco": "MAR", "Netherlands": "NED", "Nigeria": "NGA", "North Macedonia": "MKD",
+    "Norway": "NOR", "Panama": "PAN", "Paraguay": "PAR", "Peru": "PER",
+    "Poland": "POL", "Portugal": "POR", "Qatar": "QAT", "Republic of Ireland": "IRL",
+    "Romania": "ROU", "Russia": "RUS", "Saudi Arabia": "KSA", "Scotland": "SCO",
+    "Senegal": "SEN", "Serbia": "SRB", "Slovakia": "SVK", "South Africa": "RSA",
+    "South Korea": "KOR", "Spain": "ESP", "Sweden": "SWE", "Switzerland": "SUI",
+    "Tunisia": "TUN", "Turkey": "TUR", "Ukraine": "UKR", "United States": "USA",
+    "Uruguay": "URU", "Venezuela": "VEN", "Wales": "WAL",
+}
 
 
 def parse_openfootball(payload: dict[str, Any]) -> list[Fixture]:
@@ -199,3 +225,51 @@ def read_fixtures_parquet(path: Path | None = None) -> list[Fixture]:
                 row[key] = int(value)
         fixtures.append(Fixture.from_dict(row))
     return fixtures
+
+
+def country_to_tla(name: str) -> str:
+    """Map a country name to its 3-letter team code; returns name unchanged if unknown."""
+    if name in _COUNTRY_TLA:
+        return _COUNTRY_TLA[name]
+    log.debug("Unknown country name: %s", name)
+    return name
+
+
+def load_historical_csv(path: Path | str | io.StringIO) -> pd.DataFrame:
+    """Read martj42 results CSV, normalise columns, return a DataFrame."""
+    df = pd.read_csv(path)
+    df["date"] = pd.to_datetime(df["date"])
+    df["neutral"] = df["neutral"].astype(str).str.lower().isin({"true", "1", "yes"})
+    df = df.rename(
+        columns={
+            "home_team": "home",
+            "away_team": "away",
+            "home_score": "home_goals",
+            "away_score": "away_goals",
+        }
+    )
+    return df[["date", "home", "away", "home_goals", "away_goals", "tournament", "neutral"]]
+
+
+def fetch_historical_results(
+    client: httpx.Client | None = None,
+    cache_path: Path | None = None,
+) -> pd.DataFrame:
+    """Fetch the martj42 historical results CSV (cached for 7 days)."""
+    cache_path = cache_path or (config.DATA_DIR / "historical.parquet")
+    if cache_path.exists():
+        age = dt.datetime.now() - dt.datetime.fromtimestamp(cache_path.stat().st_mtime)
+        if age < dt.timedelta(days=7):
+            return pd.read_parquet(cache_path)
+    if client is not None:
+        resp = client.get(HISTORICAL_URL)
+        resp.raise_for_status()
+        df = load_historical_csv(io.StringIO(resp.text))
+    else:
+        with httpx.Client(timeout=60.0) as owned:
+            resp = owned.get(HISTORICAL_URL)
+            resp.raise_for_status()
+            df = load_historical_csv(io.StringIO(resp.text))
+    cache_path.parent.mkdir(parents=True, exist_ok=True)
+    df.to_parquet(cache_path, index=False)
+    return df
