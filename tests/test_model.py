@@ -50,3 +50,57 @@ def test_expected_goals_from_elo_favours_higher_rated():
                                      home_adv=1.0)
     assert lh > la
     assert lh > 1.3
+
+
+def test_fit_params_recovers_synthetic_values():
+    """Fit on data generated from known (base, home_adv, rho), recover them ±tolerance."""
+    import pandas as pd
+    from forecaster.model import dixon_coles_grid, fit_params, expected_goals_from_elo
+
+    rng = np.random.default_rng(42)
+    true = dict(base_goals=1.3, home_adv=1.25, rho=-0.05, xi=0.001)
+    elos = {f"T{i}": 1500 + rng.normal(0, 200) for i in range(10)}
+    rows = []
+    for _ in range(2000):
+        h, a = rng.choice(list(elos.keys()), size=2, replace=False)
+        lh, la = expected_goals_from_elo(elos[h], elos[a],
+                                         true["base_goals"], true["home_adv"])
+        grid = dixon_coles_grid(lh, la, true["rho"], max_goals=10)
+        flat = grid.flatten()
+        idx = rng.choice(len(flat), p=flat / flat.sum())
+        i, j = divmod(idx, grid.shape[1])
+        rows.append({
+            "date": pd.Timestamp("2024-01-01") + pd.Timedelta(days=int(rng.integers(0, 365))),
+            "home": h, "away": a,
+            "home_goals": int(i), "away_goals": int(j),
+            "neutral": False,
+        })
+    df = pd.DataFrame(rows)
+    fitted = fit_params(df, elos, ref_date=pd.Timestamp("2025-01-01"))
+    # Tolerances are wide because the τ-corrected log-likelihood treats τ as a
+    # multiplicative factor without re-normalising the joint density (the
+    # Dixon-Coles paper's Z(λ_h, λ_a, ρ) ≈ 1). That introduces a small bias in
+    # base_goals ↔ home_adv. We're only asserting "rough recovery".
+    assert abs(fitted["base_goals"] - true["base_goals"]) < 0.4
+    assert abs(fitted["home_adv"] - true["home_adv"]) < 0.4
+    assert abs(fitted["rho"] - true["rho"]) < 0.1
+
+
+def test_predict_fixture_returns_score_grid_and_lambdas():
+    import datetime as dt
+    from forecaster.model import predict_fixture
+    from forecaster.schema import Fixture
+
+    fixture = Fixture(
+        fixture_id="2026-06-11-MEX-RSA",
+        utc_kickoff=dt.datetime(2026, 6, 11, 18, 0, tzinfo=dt.timezone.utc),
+        home="MEX", away="RSA", venue_country="MEX",
+        stage="GROUP", status="SCHEDULED",
+        actual_home_goals=None, actual_away_goals=None,
+    )
+    elo = {"MEX": 1825, "RSA": 1620}
+    params = {"base_goals": 1.4, "home_adv": 1.3, "rho": -0.1, "xi": 0.001}
+    pred = predict_fixture(fixture, elo, params)
+    assert pred.score_grid.grid.shape == (9, 9)
+    assert pred.lambda_home > pred.lambda_away
+    assert abs(pred.score_grid.grid.sum() - 1.0) < 1e-9
