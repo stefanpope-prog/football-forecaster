@@ -68,8 +68,8 @@ def test_build_form_summary_mentions_form_and_elo():
         history=_history(),
     )
     assert "MEX" in text and "RSA" in text
-    assert "Elo" in text or "stronger" in text or "edge" in text or "favoured" in text
-    assert any(c in text for c in "WDL")
+    assert any(w in text for w in ("favourite", "edge", "evenly matched"))
+    assert any(w in text for w in ("win", "draw", "loss"))
 
 
 def test_summarise_all_returns_dict_keyed_by_fixture_id():

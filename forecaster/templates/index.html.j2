@@ -69,24 +69,29 @@
 
 <script type="application/json" id="briefings">{{ briefings_json|safe }}</script>
 <script>
-async function copyAndOpen(btn) {
+function copyAndOpen(btn) {
   const id = btn.dataset.fixture;
   const briefings = JSON.parse(document.getElementById('briefings').textContent);
   const text = briefings[id];
   if (!text) return;
-  try {
-    await navigator.clipboard.writeText(text);
-    btn.textContent = "Copied - opening Claude...";
-  } catch (e) {
-    const ta = document.createElement('textarea');
-    ta.value = text;
-    document.body.appendChild(ta);
-    ta.select();
-    document.execCommand('copy');
-    ta.remove();
-    btn.textContent = "Copied - opening Claude...";
+
+  const ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.opacity = '0';
+  document.body.appendChild(ta);
+  ta.select();
+  ta.setSelectionRange(0, text.length);
+  let copied = false;
+  try { copied = document.execCommand('copy'); } catch (e) {}
+  ta.remove();
+
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).catch(() => {});
   }
-  setTimeout(() => window.open('https://claude.ai/new', '_blank'), 400);
+
+  btn.textContent = copied ? "Copied - opening Claude..." : "Opening Claude...";
+  window.open('https://claude.ai/new', '_blank');
 }
 </script>
 </body>

@@ -52,7 +52,51 @@ def _head_to_head(history: pd.DataFrame, home: str, away: str, n: int = 3) -> st
             away_wins += 1
         else:
             draws += 1
-    return f"H2H last {len(h2h)}: {home} {home_wins}W-{draws}D-{away_wins}L"
+    parts = []
+    if home_wins:
+        parts.append(f"{home} won {home_wins}")
+    if draws:
+        parts.append(f"drew {draws}")
+    if away_wins:
+        parts.append(f"{away} won {away_wins}")
+    return f"Past {len(h2h)} meetings: " + ", ".join(parts)
+
+
+def _form_phrase(letters: str) -> str:
+    """Turn 'WDWDW' into '3 wins, 2 draws'; 'DDDDD' into 'drew all 5'."""
+    if not letters:
+        return "no recent matches"
+    n = len(letters)
+    w, d, l = letters.count("W"), letters.count("D"), letters.count("L")
+    if w == n:
+        return f"won all {n}"
+    if d == n:
+        return f"drew all {n}"
+    if l == n:
+        return f"lost all {n}"
+    parts = []
+    if w:
+        parts.append(f"{w} win{'s' if w != 1 else ''}")
+    if d:
+        parts.append(f"{d} draw{'s' if d != 1 else ''}")
+    if l:
+        parts.append(f"{l} loss{'es' if l != 1 else ''}")
+    return ", ".join(parts)
+
+
+def _edge_phrase(home: str, away: str, gap: float) -> str:
+    """Translate Elo gap into plain football language."""
+    abs_gap = abs(gap)
+    favourite = home if gap > 0 else away
+    if abs_gap < 30:
+        return f"{home} and {away} look evenly matched"
+    if abs_gap < 100:
+        return f"slight edge to {favourite}"
+    if abs_gap < 200:
+        return f"{favourite} is the favourite"
+    if abs_gap < 400:
+        return f"{favourite} is the clear favourite"
+    return f"{favourite} is the heavy favourite"
 
 
 def build_form_summary(
@@ -70,30 +114,26 @@ def build_form_summary(
     home_form = _form_letters(last_n_results(history, home, n=5), home)
     away_form = _form_letters(last_n_results(history, away, n=5), away)
 
-    if abs(elo_gap) < 30:
-        edge = "rated near-evenly"
-    elif elo_gap > 0:
-        edge = f"{home} edge: +{int(elo_gap)} Elo over {away}"
-    else:
-        edge = f"{away} edge: +{int(-elo_gap)} Elo over {home}"
+    edge = _edge_phrase(home, away, elo_gap)
 
     sg = prediction.score_grid
     wdl = (
-        f"Model: {home} {sg.win_prob()*100:.0f}% / draw {sg.draw_prob()*100:.0f}% / "
+        f"Model gives {home} {sg.win_prob()*100:.0f}%, "
+        f"draw {sg.draw_prob()*100:.0f}%, "
         f"{away} {sg.loss_prob()*100:.0f}%"
     )
 
     pieces = [
         f"{edge}.",
-        f"Form (last 5): {home} {home_form or 'no recent matches'}, "
-        f"{away} {away_form or 'no recent matches'}.",
+        f"Recent form (last 5): {home} {_form_phrase(home_form)}; "
+        f"{away} {_form_phrase(away_form)}.",
     ]
     h2h = _head_to_head(history, home, away)
     if h2h:
         pieces.append(h2h + ".")
     pieces.append(wdl + ".")
     if fixture.venue_country == home:
-        pieces.append(f"{home} at home.")
+        pieces.append(f"{home} plays at home.")
 
     return " ".join(pieces)
 
