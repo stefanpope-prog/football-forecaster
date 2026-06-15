@@ -34,7 +34,12 @@ jobs:
       - name: Run pipeline
         env:
           FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
-        run: python -m forecaster run
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            python -m forecaster run --force
+          else
+            python -m forecaster run
+          fi
 
       - name: Commit data + docs
         run: |
