@@ -10,9 +10,9 @@
     0,
     8
   ],
-  "expected_points": 4.824,
-  "lambda_home": 0.029,
-  "lambda_away": 12.267,
+  "expected_points": 5.15,
+  "lambda_home": 0.042,
+  "lambda_away": 18.934,
   "w_d_l": {
     "win": 0.0,
     "draw": 0.0,
@@ -24,52 +24,52 @@
         0,
         8
       ],
-      "prob": 0.4203
+      "prob": 0.5831
     },
     {
       "score": [
         0,
         7
       ],
-      "prob": 0.2741
+      "prob": 0.2464
     },
     {
       "score": [
         0,
         6
       ],
-      "prob": 0.1564
+      "prob": 0.0911
     },
     {
       "score": [
         0,
         5
       ],
-      "prob": 0.0765
+      "prob": 0.0289
     }
   ],
   "score_grid": [
     [
+      0.0,
       3e-05,
-      0.0004,
-      0.00249,
-      0.01017,
-      0.03119,
-      0.07651,
-      0.15643,
-      0.27412,
-      0.42031
+      0.00026,
+      0.00161,
+      0.00762,
+      0.02886,
+      0.09109,
+      0.24638,
+      0.58313
     ],
     [
+      0.0,
       0.0,
       1e-05,
       7e-05,
-      0.00029,
-      0.0009,
-      0.0022,
-      0.0045,
-      0.00788,
-      0.01209
+      0.00032,
+      0.00121,
+      0.00382,
+      0.01032,
+      0.02443
     ],
     [
       0.0,
@@ -78,9 +78,9 @@
       0.0,
       1e-05,
       3e-05,
-      6e-05,
-      0.00011,
-      0.00017
+      8e-05,
+      0.00022,
+      0.00051
     ],
     [
       0.0,
@@ -91,7 +91,7 @@
       0.0,
       0.0,
       0.0,
-      0.0
+      1e-05
     ],
     [
       0.0,
@@ -149,6 +149,6 @@
       0.0
     ]
   ],
-  "rationale": "FRA edge: +526 Elo over NOR. Form (last 5): NOR DWDLW, FRA LWWWD. H2H last 3: NOR 1W-1D-1L. Model: NOR 0% / draw 0% / FRA 100%.",
-  "generated_at": "2026-06-12T09:33:48.287257+00:00"
+  "rationale": "FRA is the heavy favourite. Recent form (last 5): NOR 2 wins, 2 draws, 1 loss; FRA 3 wins, 1 draw, 1 loss. Past 3 meetings: NOR won 1, drew 1, FRA won 1. Model gives NOR 0%, draw 0%, FRA 100%.",
+  "generated_at": "2026-06-16T23:03:51.502464+00:00"
 }

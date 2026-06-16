@@ -10,9 +10,9 @@
     0,
     8
   ],
-  "expected_points": 5.346,
-  "lambda_home": 0.015,
-  "lambda_away": 24.056,
+  "expected_points": 5.532,
+  "lambda_home": 0.022,
+  "lambda_away": 36.076,
   "w_d_l": {
     "win": 0.0,
     "draw": 0.0,
@@ -24,63 +24,63 @@
         0,
         8
       ],
-      "prob": 0.6752
+      "prob": 0.7684
     },
     {
       "score": [
         0,
         7
       ],
-      "prob": 0.2246
+      "prob": 0.1704
     },
     {
       "score": [
         0,
         6
       ],
-      "prob": 0.0653
+      "prob": 0.0331
     },
     {
       "score": [
-        0,
-        5
+        1,
+        8
       ],
-      "prob": 0.0163
+      "prob": 0.0169
     }
   ],
   "score_grid": [
     [
       0.0,
-      1e-05,
-      7e-05,
-      0.00056,
-      0.00339,
-      0.0163,
-      0.06534,
-      0.22455,
-      0.67523
-    ],
-    [
-      0.0,
-      0.0,
       0.0,
       1e-05,
-      5e-05,
-      0.00024,
-      0.00096,
-      0.00329,
-      0.0099
+      8e-05,
+      0.00076,
+      0.0055,
+      0.03306,
+      0.1704,
+      0.76843
     ],
     [
       0.0,
       0.0,
       0.0,
       0.0,
-      0.0,
-      0.0,
-      1e-05,
       2e-05,
-      7e-05
+      0.00012,
+      0.00073,
+      0.00375,
+      0.0169
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1e-05,
+      4e-05,
+      0.00019
     ],
     [
       0.0,
@@ -149,6 +149,6 @@
       0.0
     ]
   ],
-  "rationale": "ARG edge: +643 Elo over JOR. Form (last 5): JOR LLDDL, ARG WWWLW. Model: JOR 0% / draw 0% / ARG 100%.",
-  "generated_at": "2026-06-12T09:33:48.289234+00:00"
+  "rationale": "ARG is the heavy favourite. Recent form (last 5): JOR 2 draws, 3 losses; ARG 4 wins, 1 loss. Model gives JOR 0%, draw 0%, ARG 100%.",
+  "generated_at": "2026-06-16T23:03:51.505252+00:00"
 }
