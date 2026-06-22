@@ -216,6 +216,10 @@ def parse_football_data(payload: dict[str, Any]) -> list[Fixture]:
             ft = m.get("score", {}).get("fullTime", {})
             ah = ft.get("home")
             aa = ft.get("away")
+            # football-data.org uses a richer status vocabulary (TIMED, IN_PLAY,
+            # PAUSED, ...). Downstream only cares about FINISHED vs not.
+            raw_status = m.get("status", "SCHEDULED")
+            status = "FINISHED" if raw_status == "FINISHED" else "SCHEDULED"
             fixtures.append(Fixture(
                 fixture_id=f"{kickoff.date().isoformat()}-{home}-{away}",
                 utc_kickoff=kickoff,
@@ -223,7 +227,7 @@ def parse_football_data(payload: dict[str, Any]) -> list[Fixture]:
                 away=away,
                 venue_country=_venue_country(m.get("venue")),
                 stage=_STAGE_MAP.get(m.get("stage", "GROUP_STAGE"), "GROUP"),
-                status=m.get("status", "SCHEDULED"),
+                status=status,
                 actual_home_goals=ah,
                 actual_away_goals=aa,
             ))
