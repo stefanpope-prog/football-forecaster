@@ -1,8 +1,8 @@
 {
-  "fixture_id": "2026-06-27-PAN-ENG",
-  "kickoff_utc": "2026-06-27T21:00:00+00:00",
-  "home": "PAN",
-  "away": "ENG",
+  "fixture_id": "2026-06-25-CZE-MEX",
+  "kickoff_utc": "2026-06-25T01:00:00+00:00",
+  "home": "CZE",
+  "away": "MEX",
   "stage": "GROUP",
   "status": "SCHEDULED",
   "actual": null,
@@ -10,13 +10,13 @@
     0,
     8
   ],
-  "expected_points": 4.975,
-  "lambda_home": 0.112,
-  "lambda_away": 17.094,
+  "expected_points": 4.454,
+  "lambda_home": 0.189,
+  "lambda_away": 10.11,
   "w_d_l": {
     "win": 0.0,
-    "draw": 0.0,
-    "loss": 1.0
+    "draw": 0.0005,
+    "loss": 0.9995
   },
   "top_scorelines": [
     {
@@ -24,74 +24,74 @@
         0,
         8
       ],
-      "prob": 0.5103
+      "prob": 0.2842
     },
     {
       "score": [
         0,
         7
       ],
-      "prob": 0.2388
+      "prob": 0.2249
     },
     {
       "score": [
         0,
         6
       ],
-      "prob": 0.0978
+      "prob": 0.1557
     },
     {
       "score": [
-        1,
-        8
+        0,
+        5
       ],
-      "prob": 0.0571
+      "prob": 0.0924
     }
   ],
   "score_grid": [
     [
-      0.0,
-      5e-05,
-      0.00041,
-      0.00235,
-      0.01004,
-      0.03433,
-      0.0978,
-      0.23882,
-      0.51029
+      0.00012,
+      0.00104,
+      0.00537,
+      0.01808,
+      0.04571,
+      0.09242,
+      0.15572,
+      0.2249,
+      0.28421
     ],
     [
       0.0,
-      1e-05,
-      5e-05,
-      0.00026,
-      0.00112,
-      0.00384,
-      0.01095,
-      0.02674,
-      0.05713
-    ],
-    [
-      0.0,
-      0.0,
-      0.0,
-      1e-05,
-      6e-05,
       0.00022,
-      0.00061,
-      0.0015,
-      0.0032
+      0.00102,
+      0.00342,
+      0.00865,
+      0.01749,
+      0.02947,
+      0.04257,
+      0.05379
     ],
     [
       0.0,
-      0.0,
-      0.0,
+      2e-05,
+      0.0001,
+      0.00032,
+      0.00082,
+      0.00166,
+      0.00279,
+      0.00403,
+      0.00509
+    ],
+    [
       0.0,
       0.0,
       1e-05,
       2e-05,
-      6e-05,
-      0.00012
+      5e-05,
+      0.0001,
+      0.00018,
+      0.00025,
+      0.00032
     ],
     [
       0.0,
@@ -100,9 +100,9 @@
       0.0,
       0.0,
       0.0,
-      0.0,
-      0.0,
-      0.0
+      1e-05,
+      1e-05,
+      2e-05
     ],
     [
       0.0,
@@ -149,6 +149,6 @@
       0.0
     ]
   ],
-  "rationale": "ENG is the heavy favourite. Recent form (last 5): PAN 1 win, 2 draws, 2 losses; ENG 3 wins, 1 draw, 1 loss. Past 1 meetings: ENG won 1. Model gives PAN 0%, draw 0%, ENG 100%.",
-  "generated_at": "2026-06-22T08:37:22.840255+00:00"
+  "rationale": "MEX is the clear favourite. Recent form (last 5): CZE 4 draws, 1 loss; MEX 4 wins, 1 draw. Past 1 meetings: CZE won 1. Model gives CZE 0%, draw 0%, MEX 100%.",
+  "generated_at": "2026-06-22T08:37:22.835742+00:00"
 }

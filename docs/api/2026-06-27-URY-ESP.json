@@ -1,8 +1,8 @@
 {
-  "fixture_id": "2026-06-26-NOR-FRA",
-  "kickoff_utc": "2026-06-26T19:00:00+00:00",
-  "home": "NOR",
-  "away": "FRA",
+  "fixture_id": "2026-06-27-URY-ESP",
+  "kickoff_utc": "2026-06-27T00:00:00+00:00",
+  "home": "URY",
+  "away": "ESP",
   "stage": "GROUP",
   "status": "SCHEDULED",
   "actual": null,
@@ -10,9 +10,9 @@
     0,
     8
   ],
-  "expected_points": 5.324,
-  "lambda_home": 0.07,
-  "lambda_away": 27.31,
+  "expected_points": 5.26,
+  "lambda_home": 0.077,
+  "lambda_away": 24.702,
   "w_d_l": {
     "win": 0.0,
     "draw": 0.0,
@@ -24,74 +24,74 @@
         0,
         8
       ],
-      "prob": 0.6717
+      "prob": 0.6412
     },
     {
       "score": [
         0,
         7
       ],
-      "prob": 0.1968
+      "prob": 0.2077
     },
     {
       "score": [
         0,
         6
       ],
-      "prob": 0.0504
+      "prob": 0.0588
     },
     {
       "score": [
         1,
         8
       ],
-      "prob": 0.0471
+      "prob": 0.0497
     }
   ],
   "score_grid": [
     [
       0.0,
       0.0,
-      3e-05,
-      0.0003,
-      0.00203,
-      0.01108,
-      0.05043,
-      0.19676,
-      0.67169
+      6e-05,
+      0.00047,
+      0.00289,
+      0.01429,
+      0.05885,
+      0.20767,
+      0.64122
     ],
     [
       0.0,
       0.0,
       0.0,
-      2e-05,
-      0.00014,
-      0.00078,
-      0.00353,
-      0.01379,
-      0.04706
+      4e-05,
+      0.00022,
+      0.00111,
+      0.00456,
+      0.01609,
+      0.04967
     ],
     [
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      3e-05,
-      0.00012,
-      0.00048,
-      0.00165
-    ],
-    [
-      0.0,
-      0.0,
-      0.0,
       0.0,
       0.0,
       0.0,
       0.0,
       1e-05,
-      4e-05
+      4e-05,
+      0.00018,
+      0.00062,
+      0.00192
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      2e-05,
+      5e-05
     ],
     [
       0.0,
@@ -149,6 +149,6 @@
       0.0
     ]
   ],
-  "rationale": "FRA is the heavy favourite. Recent form (last 5): NOR 2 wins, 2 draws, 1 loss; FRA 3 wins, 1 draw, 1 loss. Past 3 meetings: NOR won 1, drew 1, FRA won 1. Model gives NOR 0%, draw 0%, FRA 100%.",
-  "generated_at": "2026-06-22T08:37:22.838363+00:00"
+  "rationale": "ESP is the heavy favourite. Recent form (last 5): URY no recent matches; ESP 2 wins, 3 draws. Model gives URY 0%, draw 0%, ESP 100%.",
+  "generated_at": "2026-06-22T08:37:22.839039+00:00"
 }

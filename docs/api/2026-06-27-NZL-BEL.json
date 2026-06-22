@@ -1,8 +1,8 @@
 {
-  "fixture_id": "2026-06-26-NOR-FRA",
-  "kickoff_utc": "2026-06-26T19:00:00+00:00",
-  "home": "NOR",
-  "away": "FRA",
+  "fixture_id": "2026-06-27-NZL-BEL",
+  "kickoff_utc": "2026-06-27T03:00:00+00:00",
+  "home": "NZL",
+  "away": "BEL",
   "stage": "GROUP",
   "status": "SCHEDULED",
   "actual": null,
@@ -10,13 +10,13 @@
     0,
     8
   ],
-  "expected_points": 5.324,
-  "lambda_home": 0.07,
-  "lambda_away": 27.31,
+  "expected_points": 4.74,
+  "lambda_home": 0.144,
+  "lambda_away": 13.307,
   "w_d_l": {
     "win": 0.0,
-    "draw": 0.0,
-    "loss": 1.0
+    "draw": 0.0001,
+    "loss": 0.9999
   },
   "top_scorelines": [
     {
@@ -24,74 +24,74 @@
         0,
         8
       ],
-      "prob": 0.6717
+      "prob": 0.4058
     },
     {
       "score": [
         0,
         7
       ],
-      "prob": 0.1968
+      "prob": 0.244
     },
     {
       "score": [
         0,
         6
       ],
-      "prob": 0.0504
+      "prob": 0.1284
     },
     {
       "score": [
         1,
         8
       ],
-      "prob": 0.0471
+      "prob": 0.0584
     }
   ],
   "score_grid": [
     [
-      0.0,
-      0.0,
-      3e-05,
-      0.0003,
-      0.00203,
-      0.01108,
-      0.05043,
-      0.19676,
-      0.67169
+      2e-05,
+      0.00022,
+      0.00147,
+      0.00654,
+      0.02175,
+      0.05787,
+      0.12835,
+      0.24399,
+      0.40584
     ],
     [
       0.0,
+      4e-05,
+      0.00021,
+      0.00094,
+      0.00313,
+      0.00832,
+      0.01846,
+      0.03509,
+      0.05836
+    ],
+    [
       0.0,
       0.0,
       2e-05,
-      0.00014,
-      0.00078,
-      0.00353,
-      0.01379,
-      0.04706
+      7e-05,
+      0.00022,
+      0.0006,
+      0.00133,
+      0.00252,
+      0.0042
     ],
     [
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      3e-05,
-      0.00012,
-      0.00048,
-      0.00165
-    ],
-    [
-      0.0,
-      0.0,
-      0.0,
       0.0,
       0.0,
       0.0,
       0.0,
       1e-05,
-      4e-05
+      3e-05,
+      6e-05,
+      0.00012,
+      0.0002
     ],
     [
       0.0,
@@ -102,7 +102,7 @@
       0.0,
       0.0,
       0.0,
-      0.0
+      1e-05
     ],
     [
       0.0,
@@ -149,6 +149,6 @@
       0.0
     ]
   ],
-  "rationale": "FRA is the heavy favourite. Recent form (last 5): NOR 2 wins, 2 draws, 1 loss; FRA 3 wins, 1 draw, 1 loss. Past 3 meetings: NOR won 1, drew 1, FRA won 1. Model gives NOR 0%, draw 0%, FRA 100%.",
-  "generated_at": "2026-06-22T08:37:22.838363+00:00"
+  "rationale": "BEL is the clear favourite. Recent form (last 5): NZL 1 win, 4 losses; BEL 4 wins, 1 draw. Model gives NZL 0%, draw 0%, BEL 100%.",
+  "generated_at": "2026-06-22T08:37:22.839657+00:00"
 }
