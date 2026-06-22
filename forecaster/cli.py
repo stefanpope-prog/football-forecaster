@@ -50,7 +50,7 @@ def run_pipeline(force: bool = False) -> None:
 
     now = dt.datetime.now(dt.timezone.utc)
     is_match_day = _has_match_in_next_24h(fixtures, now)
-    is_scheduled_full_run = now.hour in (6, 18)
+    is_scheduled_full_run = now.hour % 6 == 0
     if not (is_match_day or is_scheduled_full_run or force):
         log.info("Quiet hour and no fixture in next 24h - exiting early.")
         return
