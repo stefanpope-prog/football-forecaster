@@ -51,14 +51,14 @@
   "score_grid": [
     [
       0.01339,
-      0.0429,
-      0.09083,
+      0.04291,
+      0.09084,
       0.12196,
       0.12281,
       0.09894,
       0.06642,
       0.03822,
-      0.01925
+      0.01924
     ],
     [
       0.00325,
@@ -150,5 +150,5 @@
     ]
   ],
   "rationale": "KOR is the favourite. Recent form (last 5): RSA 1 draw, 4 losses; KOR 3 wins, 2 losses. Model gives RSA 1%, draw 5%, KOR 94%.",
-  "generated_at": "2026-06-23T19:29:03.156456+00:00"
+  "generated_at": "2026-06-23T23:40:31.344721+00:00"
 }

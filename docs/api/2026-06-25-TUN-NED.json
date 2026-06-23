@@ -55,10 +55,10 @@
       0.0105,
       0.03019,
       0.06513,
-      0.1124,
-      0.16165,
-      0.19928,
-      0.21495
+      0.11241,
+      0.16166,
+      0.19927,
+      0.21494
     ],
     [
       1e-05,
@@ -150,5 +150,5 @@
     ]
   ],
   "rationale": "NED is the clear favourite. Recent form (last 5): TUN 1 win, 1 draw, 3 losses; NED 2 wins, 2 draws, 1 loss. Past 3 meetings: drew 2, NED won 1. Model gives TUN 0%, draw 0%, NED 100%.",
-  "generated_at": "2026-06-23T19:29:03.157526+00:00"
+  "generated_at": "2026-06-23T23:40:31.345895+00:00"
 }

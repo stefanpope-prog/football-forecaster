@@ -11,7 +11,7 @@
     0
   ],
   "expected_points": 4.715,
-  "lambda_home": 13.034,
+  "lambda_home": 13.033,
   "lambda_away": 0.15,
   "w_d_l": {
     "win": 0.9999,
@@ -138,8 +138,8 @@
       0.0
     ],
     [
-      0.39538,
-      0.05946,
+      0.39537,
+      0.05945,
       0.00447,
       0.00022,
       1e-05,
@@ -150,5 +150,5 @@
     ]
   ],
   "rationale": "COL is the clear favourite. Recent form (last 5): COL 3 wins, 2 losses; COD 3 draws, 2 losses. Model gives COL 100%, draw 0%, COD 0%.",
-  "generated_at": "2026-06-23T19:29:03.154252+00:00"
+  "generated_at": "2026-06-23T23:40:31.342181+00:00"
 }

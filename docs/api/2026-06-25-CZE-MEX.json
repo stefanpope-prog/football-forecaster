@@ -12,7 +12,7 @@
   ],
   "expected_points": 4.461,
   "lambda_home": 0.192,
-  "lambda_away": 10.232,
+  "lambda_away": 10.231,
   "w_d_l": {
     "win": 0.0,
     "draw": 0.0004,
@@ -58,7 +58,7 @@
       0.0904,
       0.15416,
       0.22533,
-      0.28819
+      0.28818
     ],
     [
       0.0,
@@ -69,7 +69,7 @@
       0.01732,
       0.02953,
       0.04316,
-      0.05521
+      0.0552
     ],
     [
       0.0,
@@ -150,5 +150,5 @@
     ]
   ],
   "rationale": "MEX is the clear favourite. Recent form (last 5): CZE 4 draws, 1 loss; MEX 4 wins, 1 draw. Past 1 meetings: CZE won 1. Model gives CZE 0%, draw 0%, MEX 100%.",
-  "generated_at": "2026-06-23T19:29:03.156082+00:00"
+  "generated_at": "2026-06-23T23:40:31.344307+00:00"
 }

@@ -5,14 +5,17 @@
   "away": "CRO",
   "stage": "GROUP",
   "status": "SCHEDULED",
-  "actual": null,
+  "actual": [
+    0,
+    0
+  ],
   "recommended_pick": [
     0,
     8
   ],
   "expected_points": 4.313,
   "lambda_home": 0.22,
-  "lambda_away": 8.916,
+  "lambda_away": 8.915,
   "w_d_l": {
     "win": 0.0001,
     "draw": 0.0011,
@@ -54,17 +57,17 @@
       0.00201,
       0.00918,
       0.02727,
-      0.06078,
+      0.06079,
       0.10838,
-      0.16104,
-      0.20512,
-      0.22859
+      0.16105,
+      0.20511,
+      0.22858
     ],
     [
       1e-05,
       0.0005,
       0.00202,
-      0.00599,
+      0.006,
       0.01336,
       0.02383,
       0.0354,
@@ -150,5 +153,5 @@
     ]
   ],
   "rationale": "CRO is the clear favourite. Recent form (last 5): PAN 1 win, 2 draws, 2 losses; CRO 2 wins, 1 draw, 2 losses. Model gives PAN 0%, draw 0%, CRO 100%.",
-  "generated_at": "2026-06-23T19:29:03.153875+00:00"
+  "generated_at": "2026-06-23T23:40:31.341657+00:00"
 }
