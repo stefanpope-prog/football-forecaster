@@ -1,6 +1,6 @@
 # Football Forecaster - Prompt Pack
 
-Generated 2026-06-23 11:45 UTC. Paste this whole document into Claude Chat, then ask any question about the upcoming fixtures.
+Generated 2026-06-23 19:29 UTC. Paste this whole document into Claude Chat, then ask any question about the upcoming fixtures.
 
 ## System prompt for Claude
 
@@ -20,21 +20,6 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ---
 
 ## Fixtures
-
-
-### POR vs UZB - Tue 23 Jun 17:00 UTC
-
-- **Stage:** GROUP
-- **Recommended pick (EV-optimal):** 8-0 (EV ~ 5.12 pts)
-- **W / D / L:** 100% / 0% / 0%
-- **lambda_home / lambda_away:** 20.42 / 0.10
-- **Top scorelines:**
-  - 8:0 (58%)
-  - 7:0 (23%)
-  - 6:0 (8%)
-  - 8:1 (6%)
-
-- **Why:** POR is the heavy favourite. Recent form (last 5): POR 3 wins, 1 draw, 1 loss; UZB 1 win, 2 draws, 2 losses. Model gives POR 100%, draw 0%, UZB 0%.
 
 
 ### ENG vs GHA - Tue 23 Jun 20:00 UTC
@@ -385,31 +370,31 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### COL vs POR - Sat 27 Jun 23:30 UTC
 
 - **Stage:** GROUP
-- **Recommended pick (EV-optimal):** 0-1 (EV ~ 2.68 pts)
-- **W / D / L:** 17% / 23% / 60%
-- **lambda_home / lambda_away:** 0.98 / 2.00
+- **Recommended pick (EV-optimal):** 0-1 (EV ~ 2.70 pts)
+- **W / D / L:** 16% / 23% / 61%
+- **lambda_home / lambda_away:** 0.97 / 2.02
 - **Top scorelines:**
   - 1:1 (11%)
   - 0:2 (10%)
   - 1:2 (10%)
   - 0:1 (9%)
 
-- **Why:** slight edge to POR. Recent form (last 5): COL 3 wins, 2 losses; POR 3 wins, 1 draw, 1 loss. Model gives COL 17%, draw 23%, POR 60%.
+- **Why:** slight edge to POR. Recent form (last 5): COL 3 wins, 2 losses; POR 3 wins, 1 draw, 1 loss. Model gives COL 16%, draw 23%, POR 61%.
 
 
 ### COD vs UZB - Sat 27 Jun 23:30 UTC
 
 - **Stage:** GROUP
-- **Recommended pick (EV-optimal):** 2-1 (EV ~ 2.08 pts)
-- **W / D / L:** 42% / 27% / 31%
-- **lambda_home / lambda_away:** 1.53 / 1.28
+- **Recommended pick (EV-optimal):** 2-1 (EV ~ 2.11 pts)
+- **W / D / L:** 43% / 27% / 30%
+- **lambda_home / lambda_away:** 1.55 / 1.26
 - **Top scorelines:**
   - 1:1 (13%)
   - 2:1 (9%)
   - 1:0 (8%)
-  - 1:2 (8%)
+  - 1:2 (7%)
 
-- **Why:** COD and UZB look evenly matched. Recent form (last 5): COD 3 draws, 2 losses; UZB 1 win, 2 draws, 2 losses. Model gives COD 42%, draw 27%, UZB 31%.
+- **Why:** COD and UZB look evenly matched. Recent form (last 5): COD 3 draws, 2 losses; UZB 1 win, 2 draws, 2 losses. Model gives COD 43%, draw 27%, UZB 30%.
 
 
 ### JOR vs ARG - Sun 28 Jun 02:00 UTC
