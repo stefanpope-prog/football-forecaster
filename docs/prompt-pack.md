@@ -1,6 +1,6 @@
 # Football Forecaster - Prompt Pack
 
-Generated 2026-06-23 23:40 UTC. Paste this whole document into Claude Chat, then ask any question about the upcoming fixtures.
+Generated 2026-06-24 10:38 UTC. Paste this whole document into Claude Chat, then ask any question about the upcoming fixtures.
 
 ## System prompt for Claude
 
@@ -20,36 +20,6 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ---
 
 ## Fixtures
-
-
-### PAN vs CRO - Tue 23 Jun 23:00 UTC
-
-- **Stage:** GROUP
-- **Recommended pick (EV-optimal):** 0-8 (EV ~ 4.31 pts)
-- **W / D / L:** 0% / 0% / 100%
-- **lambda_home / lambda_away:** 0.22 / 8.92
-- **Top scorelines:**
-  - 0:8 (23%)
-  - 0:7 (21%)
-  - 0:6 (16%)
-  - 0:5 (11%)
-
-- **Why:** CRO is the clear favourite. Recent form (last 5): PAN 1 win, 2 draws, 2 losses; CRO 2 wins, 1 draw, 2 losses. Model gives PAN 0%, draw 0%, CRO 100%.
-
-
-### COL vs COD - Wed 24 Jun 02:00 UTC
-
-- **Stage:** GROUP
-- **Recommended pick (EV-optimal):** 8-0 (EV ~ 4.72 pts)
-- **W / D / L:** 100% / 0% / 0%
-- **lambda_home / lambda_away:** 13.03 / 0.15
-- **Top scorelines:**
-  - 8:0 (40%)
-  - 7:0 (24%)
-  - 6:0 (13%)
-  - 5:0 (6%)
-
-- **Why:** COL is the clear favourite. Recent form (last 5): COL 3 wins, 2 losses; COD 3 draws, 2 losses. Model gives COL 100%, draw 0%, COD 0%.
 
 
 ### SUI vs CAN - Wed 24 Jun 19:00 UTC
@@ -262,34 +232,34 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 - **Why:** SEN is the clear favourite. Recent form (last 5): SEN 2 wins, 1 draw, 2 losses; IRQ 2 draws, 3 losses. Model gives SEN 100%, draw 0%, IRQ 0%.
 
 
-### URY vs ESP - Sat 27 Jun 00:00 UTC
+### URU vs ESP - Sat 27 Jun 00:00 UTC
 
 - **Stage:** GROUP
-- **Recommended pick (EV-optimal):** 0-8 (EV ~ 5.26 pts)
-- **W / D / L:** 0% / 0% / 100%
-- **lambda_home / lambda_away:** 0.08 / 25.00
+- **Recommended pick (EV-optimal):** 0-3 (EV ~ 3.59 pts)
+- **W / D / L:** 3% / 9% / 87%
+- **lambda_home / lambda_away:** 0.60 / 3.29
 - **Top scorelines:**
-  - 0:8 (64%)
-  - 0:7 (21%)
-  - 0:6 (6%)
-  - 1:8 (5%)
+  - 0:3 (12%)
+  - 0:2 (11%)
+  - 0:4 (10%)
+  - 1:3 (7%)
 
-- **Why:** ESP is the heavy favourite. Recent form (last 5): URY no recent matches; ESP 2 wins, 3 draws. Model gives URY 0%, draw 0%, ESP 100%.
+- **Why:** ESP is the favourite. Recent form (last 5): URU 1 win, 3 draws, 1 loss; ESP 2 wins, 3 draws. Past 3 meetings: ESP won 3. Model gives URU 3%, draw 9%, ESP 87%.
 
 
 ### CPV vs KSA - Sat 27 Jun 00:00 UTC
 
 - **Stage:** GROUP
-- **Recommended pick (EV-optimal):** 0-2 (EV ~ 3.27 pts)
-- **W / D / L:** 7% / 15% / 77%
-- **lambda_home / lambda_away:** 0.74 / 2.66
+- **Recommended pick (EV-optimal):** 0-2 (EV ~ 3.29 pts)
+- **W / D / L:** 7% / 15% / 78%
+- **lambda_home / lambda_away:** 0.73 / 2.69
 - **Top scorelines:**
   - 0:2 (12%)
   - 0:3 (11%)
   - 1:2 (9%)
   - 0:1 (8%)
 
-- **Why:** KSA is the favourite. Recent form (last 5): CPV 2 wins, 2 draws, 1 loss; KSA 1 draw, 4 losses. Model gives CPV 7%, draw 15%, KSA 77%.
+- **Why:** KSA is the favourite. Recent form (last 5): CPV 2 wins, 2 draws, 1 loss; KSA 1 draw, 4 losses. Model gives CPV 7%, draw 15%, KSA 78%.
 
 
 ### NZL vs BEL - Sat 27 Jun 03:00 UTC
@@ -325,11 +295,11 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### PAN vs ENG - Sat 27 Jun 21:00 UTC
 
 - **Stage:** GROUP
-- **Recommended pick (EV-optimal):** 0-8 (EV ~ 4.92 pts)
+- **Recommended pick (EV-optimal):** 0-8 (EV ~ 4.94 pts)
 - **W / D / L:** 0% / 0% / 100%
-- **lambda_home / lambda_away:** 0.12 / 16.18
+- **lambda_home / lambda_away:** 0.12 / 16.57
 - **Top scorelines:**
-  - 0:8 (49%)
+  - 0:8 (50%)
   - 0:7 (24%)
   - 0:6 (10%)
   - 1:8 (6%)
@@ -340,14 +310,14 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### CRO vs GHA - Sat 27 Jun 21:00 UTC
 
 - **Stage:** GROUP
-- **Recommended pick (EV-optimal):** 5-0 (EV ~ 4.00 pts)
+- **Recommended pick (EV-optimal):** 5-0 (EV ~ 4.02 pts)
 - **W / D / L:** 98% / 2% / 0%
-- **lambda_home / lambda_away:** 5.28 / 0.37
+- **lambda_home / lambda_away:** 5.41 / 0.36
 - **Top scorelines:**
   - 5:0 (13%)
   - 4:0 (12%)
   - 6:0 (12%)
-  - 3:0 (9%)
+  - 7:0 (9%)
 
 - **Why:** CRO is the clear favourite. Recent form (last 5): CRO 2 wins, 1 draw, 2 losses; GHA 1 draw, 4 losses. Model gives CRO 98%, draw 2%, GHA 0%.
 
@@ -355,31 +325,31 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### COL vs POR - Sat 27 Jun 23:30 UTC
 
 - **Stage:** GROUP
-- **Recommended pick (EV-optimal):** 0-1 (EV ~ 2.70 pts)
-- **W / D / L:** 16% / 23% / 61%
-- **lambda_home / lambda_away:** 0.97 / 2.02
+- **Recommended pick (EV-optimal):** 0-1 (EV ~ 2.67 pts)
+- **W / D / L:** 17% / 23% / 60%
+- **lambda_home / lambda_away:** 0.98 / 1.99
 - **Top scorelines:**
   - 1:1 (11%)
   - 0:2 (10%)
   - 1:2 (10%)
   - 0:1 (9%)
 
-- **Why:** slight edge to POR. Recent form (last 5): COL 3 wins, 2 losses; POR 3 wins, 1 draw, 1 loss. Model gives COL 16%, draw 23%, POR 61%.
+- **Why:** slight edge to POR. Recent form (last 5): COL 3 wins, 2 losses; POR 3 wins, 1 draw, 1 loss. Model gives COL 17%, draw 23%, POR 60%.
 
 
 ### COD vs UZB - Sat 27 Jun 23:30 UTC
 
 - **Stage:** GROUP
-- **Recommended pick (EV-optimal):** 2-1 (EV ~ 2.11 pts)
-- **W / D / L:** 43% / 27% / 30%
-- **lambda_home / lambda_away:** 1.55 / 1.26
+- **Recommended pick (EV-optimal):** 2-1 (EV ~ 2.07 pts)
+- **W / D / L:** 42% / 27% / 31%
+- **lambda_home / lambda_away:** 1.53 / 1.28
 - **Top scorelines:**
   - 1:1 (13%)
   - 2:1 (9%)
   - 1:0 (8%)
-  - 1:2 (7%)
+  - 1:2 (8%)
 
-- **Why:** COD and UZB look evenly matched. Recent form (last 5): COD 3 draws, 2 losses; UZB 1 win, 2 draws, 2 losses. Model gives COD 43%, draw 27%, UZB 30%.
+- **Why:** COD and UZB look evenly matched. Recent form (last 5): COD 3 draws, 2 losses; UZB 1 win, 2 draws, 2 losses. Model gives COD 42%, draw 27%, UZB 31%.
 
 
 ### JOR vs ARG - Sun 28 Jun 02:00 UTC
@@ -415,7 +385,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### None vs None - Sun 28 Jun 19:00 UTC
 
 - **Stage:** GROUP
-- **Recommended pick (EV-optimal):** 1-0 (EV ~ 1.87 pts)
+- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
 - **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**
@@ -430,7 +400,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### None vs None - Mon 29 Jun 17:00 UTC
 
 - **Stage:** GROUP
-- **Recommended pick (EV-optimal):** 1-0 (EV ~ 1.87 pts)
+- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
 - **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**
@@ -445,7 +415,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### None vs None - Mon 29 Jun 20:30 UTC
 
 - **Stage:** GROUP
-- **Recommended pick (EV-optimal):** 1-0 (EV ~ 1.87 pts)
+- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
 - **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**
@@ -460,7 +430,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### None vs None - Tue 30 Jun 01:00 UTC
 
 - **Stage:** GROUP
-- **Recommended pick (EV-optimal):** 1-0 (EV ~ 1.87 pts)
+- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
 - **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**
@@ -475,7 +445,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### None vs None - Tue 30 Jun 17:00 UTC
 
 - **Stage:** GROUP
-- **Recommended pick (EV-optimal):** 1-0 (EV ~ 1.87 pts)
+- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
 - **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**
@@ -490,7 +460,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### None vs None - Tue 30 Jun 21:00 UTC
 
 - **Stage:** GROUP
-- **Recommended pick (EV-optimal):** 1-0 (EV ~ 1.87 pts)
+- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
 - **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**
@@ -505,7 +475,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### None vs None - Wed 01 Jul 01:00 UTC
 
 - **Stage:** GROUP
-- **Recommended pick (EV-optimal):** 1-0 (EV ~ 1.87 pts)
+- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
 - **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**
@@ -520,7 +490,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### None vs None - Wed 01 Jul 16:00 UTC
 
 - **Stage:** GROUP
-- **Recommended pick (EV-optimal):** 1-0 (EV ~ 1.87 pts)
+- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
 - **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**
@@ -535,7 +505,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### None vs None - Wed 01 Jul 20:00 UTC
 
 - **Stage:** GROUP
-- **Recommended pick (EV-optimal):** 1-0 (EV ~ 1.87 pts)
+- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
 - **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**
@@ -550,7 +520,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### None vs None - Thu 02 Jul 00:00 UTC
 
 - **Stage:** GROUP
-- **Recommended pick (EV-optimal):** 1-0 (EV ~ 1.87 pts)
+- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
 - **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**
@@ -565,7 +535,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### None vs None - Thu 02 Jul 19:00 UTC
 
 - **Stage:** GROUP
-- **Recommended pick (EV-optimal):** 1-0 (EV ~ 1.87 pts)
+- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
 - **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**
@@ -580,7 +550,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### None vs None - Thu 02 Jul 23:00 UTC
 
 - **Stage:** GROUP
-- **Recommended pick (EV-optimal):** 1-0 (EV ~ 1.87 pts)
+- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
 - **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**
@@ -595,7 +565,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### None vs None - Fri 03 Jul 03:00 UTC
 
 - **Stage:** GROUP
-- **Recommended pick (EV-optimal):** 1-0 (EV ~ 1.87 pts)
+- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
 - **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**
@@ -610,7 +580,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### None vs None - Fri 03 Jul 18:00 UTC
 
 - **Stage:** GROUP
-- **Recommended pick (EV-optimal):** 1-0 (EV ~ 1.87 pts)
+- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
 - **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**
@@ -625,7 +595,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### None vs None - Fri 03 Jul 22:00 UTC
 
 - **Stage:** GROUP
-- **Recommended pick (EV-optimal):** 1-0 (EV ~ 1.87 pts)
+- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
 - **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**
@@ -640,7 +610,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### None vs None - Sat 04 Jul 01:30 UTC
 
 - **Stage:** GROUP
-- **Recommended pick (EV-optimal):** 1-0 (EV ~ 1.87 pts)
+- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
 - **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**
@@ -655,7 +625,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### None vs None - Sat 04 Jul 17:00 UTC
 
 - **Stage:** R16
-- **Recommended pick (EV-optimal):** 1-0 (EV ~ 1.87 pts)
+- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
 - **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**
@@ -670,7 +640,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### None vs None - Sat 04 Jul 21:00 UTC
 
 - **Stage:** R16
-- **Recommended pick (EV-optimal):** 1-0 (EV ~ 1.87 pts)
+- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
 - **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**
@@ -685,7 +655,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### None vs None - Sun 05 Jul 20:00 UTC
 
 - **Stage:** R16
-- **Recommended pick (EV-optimal):** 1-0 (EV ~ 1.87 pts)
+- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
 - **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**
@@ -700,7 +670,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### None vs None - Mon 06 Jul 00:00 UTC
 
 - **Stage:** R16
-- **Recommended pick (EV-optimal):** 1-0 (EV ~ 1.87 pts)
+- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
 - **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**
@@ -715,7 +685,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### None vs None - Mon 06 Jul 19:00 UTC
 
 - **Stage:** R16
-- **Recommended pick (EV-optimal):** 1-0 (EV ~ 1.87 pts)
+- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
 - **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**
@@ -730,7 +700,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### None vs None - Tue 07 Jul 00:00 UTC
 
 - **Stage:** R16
-- **Recommended pick (EV-optimal):** 1-0 (EV ~ 1.87 pts)
+- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
 - **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**
@@ -745,7 +715,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### None vs None - Tue 07 Jul 16:00 UTC
 
 - **Stage:** R16
-- **Recommended pick (EV-optimal):** 1-0 (EV ~ 1.87 pts)
+- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
 - **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**
@@ -760,7 +730,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### None vs None - Tue 07 Jul 20:00 UTC
 
 - **Stage:** R16
-- **Recommended pick (EV-optimal):** 1-0 (EV ~ 1.87 pts)
+- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
 - **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**
@@ -775,7 +745,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### None vs None - Thu 09 Jul 20:00 UTC
 
 - **Stage:** QF
-- **Recommended pick (EV-optimal):** 1-0 (EV ~ 1.87 pts)
+- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
 - **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**
@@ -790,7 +760,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### None vs None - Fri 10 Jul 19:00 UTC
 
 - **Stage:** QF
-- **Recommended pick (EV-optimal):** 1-0 (EV ~ 1.87 pts)
+- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
 - **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**
@@ -805,7 +775,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### None vs None - Sat 11 Jul 21:00 UTC
 
 - **Stage:** QF
-- **Recommended pick (EV-optimal):** 1-0 (EV ~ 1.87 pts)
+- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
 - **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**
@@ -820,7 +790,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### None vs None - Sun 12 Jul 01:00 UTC
 
 - **Stage:** QF
-- **Recommended pick (EV-optimal):** 1-0 (EV ~ 1.87 pts)
+- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
 - **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**
@@ -835,7 +805,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### None vs None - Tue 14 Jul 19:00 UTC
 
 - **Stage:** SF
-- **Recommended pick (EV-optimal):** 1-0 (EV ~ 1.87 pts)
+- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
 - **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**
@@ -850,7 +820,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### None vs None - Wed 15 Jul 19:00 UTC
 
 - **Stage:** SF
-- **Recommended pick (EV-optimal):** 1-0 (EV ~ 1.87 pts)
+- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
 - **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**
@@ -865,7 +835,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### None vs None - Sat 18 Jul 21:00 UTC
 
 - **Stage:** F
-- **Recommended pick (EV-optimal):** 1-0 (EV ~ 1.87 pts)
+- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
 - **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**
@@ -880,7 +850,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### None vs None - Sun 19 Jul 19:00 UTC
 
 - **Stage:** F
-- **Recommended pick (EV-optimal):** 1-0 (EV ~ 1.87 pts)
+- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
 - **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**

@@ -12,7 +12,7 @@
   ],
   "expected_points": 5.244,
   "lambda_home": 0.081,
-  "lambda_away": 24.25,
+  "lambda_away": 24.251,
   "w_d_l": {
     "win": 0.0,
     "draw": 0.0,
@@ -57,8 +57,8 @@
       0.00308,
       0.01494,
       0.06039,
-      0.20921,
-      0.63416
+      0.2092,
+      0.63417
     ],
     [
       0.0,
@@ -150,5 +150,5 @@
     ]
   ],
   "rationale": "FRA is the heavy favourite. Recent form (last 5): NOR 2 wins, 2 draws, 1 loss; FRA 3 wins, 1 draw, 1 loss. Past 3 meetings: NOR won 1, drew 1, FRA won 1. Model gives NOR 0%, draw 0%, FRA 100%.",
-  "generated_at": "2026-06-23T23:40:31.347539+00:00"
+  "generated_at": "2026-06-24T10:38:06.101191+00:00"
 }

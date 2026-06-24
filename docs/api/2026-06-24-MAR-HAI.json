@@ -11,7 +11,7 @@
     0
   ],
   "expected_points": 4.307,
-  "lambda_home": 8.866,
+  "lambda_home": 8.867,
   "lambda_away": 0.221,
   "w_d_l": {
     "win": 0.9988,
@@ -94,7 +94,7 @@
       0.0
     ],
     [
-      0.06151,
+      0.0615,
       0.0136,
       0.0015,
       0.00011,
@@ -138,7 +138,7 @@
       0.0
     ],
     [
-      0.22627,
+      0.22628,
       0.05002,
       0.00553,
       0.00041,
@@ -150,5 +150,5 @@
     ]
   ],
   "rationale": "MAR is the clear favourite. Recent form (last 5): MAR 2 wins, 3 draws; HAI 2 wins, 1 draw, 2 losses. Model gives MAR 100%, draw 0%, HAI 0%.",
-  "generated_at": "2026-06-23T23:40:31.343520+00:00"
+  "generated_at": "2026-06-24T10:38:06.097179+00:00"
 }
