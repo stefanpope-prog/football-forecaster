@@ -11,11 +11,11 @@
     1
   ],
   "expected_points": 1.873,
-  "lambda_home": 1.395,
+  "lambda_home": 1.396,
   "lambda_away": 1.404,
   "w_d_l": {
     "win": 0.3596,
-    "draw": 0.2767,
+    "draw": 0.2766,
     "loss": 0.3637
   },
   "top_scorelines": [
@@ -50,7 +50,7 @@
   ],
   "score_grid": [
     [
-      0.07274,
+      0.07273,
       0.07349,
       0.05998,
       0.02808,
@@ -61,10 +61,10 @@
       2e-05
     ],
     [
-      0.07295,
+      0.07294,
       0.13111,
       0.0837,
-      0.03918,
+      0.03919,
       0.01376,
       0.00386,
       0.0009,
@@ -72,7 +72,7 @@
       3e-05
     ],
     [
-      0.05922,
+      0.05921,
       0.08317,
       0.0584,
       0.02734,
@@ -150,5 +150,5 @@
     ]
   ],
   "rationale": "ALG and AUT look evenly matched. Recent form (last 5): ALG 3 wins, 1 draw, 1 loss; AUT 3 wins, 1 draw, 1 loss. Past 1 meetings: AUT won 1. Model gives ALG 36%, draw 28%, AUT 36%.",
-  "generated_at": "2026-06-25T18:37:07.097662+00:00"
+  "generated_at": "2026-06-25T23:57:05.541237+00:00"
 }
