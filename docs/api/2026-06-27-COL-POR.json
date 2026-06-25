@@ -96,7 +96,7 @@
     [
       0.002,
       0.00399,
-      0.00397,
+      0.00396,
       0.00263,
       0.00131,
       0.00052,
@@ -150,5 +150,5 @@
     ]
   ],
   "rationale": "slight edge to POR. Recent form (last 5): COL 3 wins, 2 losses; POR 3 wins, 1 draw, 1 loss. Model gives COL 17%, draw 23%, POR 60%.",
-  "generated_at": "2026-06-25T10:25:43.559325+00:00"
+  "generated_at": "2026-06-25T18:37:07.096588+00:00"
 }

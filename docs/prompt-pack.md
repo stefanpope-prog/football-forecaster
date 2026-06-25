@@ -1,6 +1,6 @@
 # Football Forecaster - Prompt Pack
 
-Generated 2026-06-25 10:25 UTC. Paste this whole document into Claude Chat, then ask any question about the upcoming fixtures.
+Generated 2026-06-25 18:37 UTC. Paste this whole document into Claude Chat, then ask any question about the upcoming fixtures.
 
 ## System prompt for Claude
 
@@ -142,34 +142,34 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 - **Why:** SEN is the clear favourite. Recent form (last 5): SEN 2 wins, 1 draw, 2 losses; IRQ 2 draws, 3 losses. Model gives SEN 100%, draw 0%, IRQ 0%.
 
 
-### URY vs ESP - Sat 27 Jun 00:00 UTC
+### URU vs ESP - Sat 27 Jun 00:00 UTC
 
 - **Stage:** GROUP
-- **Recommended pick (EV-optimal):** 0-8 (EV ~ 5.26 pts)
-- **W / D / L:** 0% / 0% / 100%
-- **lambda_home / lambda_away:** 0.08 / 25.00
+- **Recommended pick (EV-optimal):** 0-3 (EV ~ 3.59 pts)
+- **W / D / L:** 3% / 9% / 87%
+- **lambda_home / lambda_away:** 0.60 / 3.29
 - **Top scorelines:**
-  - 0:8 (64%)
-  - 0:7 (21%)
-  - 0:6 (6%)
-  - 1:8 (5%)
+  - 0:3 (12%)
+  - 0:2 (11%)
+  - 0:4 (10%)
+  - 1:3 (7%)
 
-- **Why:** ESP is the heavy favourite. Recent form (last 5): URY no recent matches; ESP 2 wins, 3 draws. Model gives URY 0%, draw 0%, ESP 100%.
+- **Why:** ESP is the favourite. Recent form (last 5): URU 1 win, 3 draws, 1 loss; ESP 2 wins, 3 draws. Past 3 meetings: ESP won 3. Model gives URU 3%, draw 9%, ESP 87%.
 
 
 ### CPV vs KSA - Sat 27 Jun 00:00 UTC
 
 - **Stage:** GROUP
-- **Recommended pick (EV-optimal):** 0-2 (EV ~ 3.27 pts)
-- **W / D / L:** 7% / 15% / 77%
-- **lambda_home / lambda_away:** 0.74 / 2.66
+- **Recommended pick (EV-optimal):** 0-2 (EV ~ 3.29 pts)
+- **W / D / L:** 7% / 15% / 78%
+- **lambda_home / lambda_away:** 0.73 / 2.69
 - **Top scorelines:**
   - 0:2 (12%)
   - 0:3 (11%)
   - 1:2 (9%)
   - 0:1 (8%)
 
-- **Why:** KSA is the favourite. Recent form (last 5): CPV 2 wins, 2 draws, 1 loss; KSA 1 draw, 4 losses. Model gives CPV 7%, draw 15%, KSA 77%.
+- **Why:** KSA is the favourite. Recent form (last 5): CPV 2 wins, 2 draws, 1 loss; KSA 1 draw, 4 losses. Model gives CPV 7%, draw 15%, KSA 78%.
 
 
 ### NZL vs BEL - Sat 27 Jun 03:00 UTC
@@ -322,19 +322,19 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 - **Why:** None and None look evenly matched. Recent form (last 5): None no recent matches; None no recent matches. Model gives None 36%, draw 28%, None 36%.
 
 
-### None vs None - Mon 29 Jun 20:30 UTC
+### GER vs None - Mon 29 Jun 20:30 UTC
 
 - **Stage:** GROUP
-- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
-- **W / D / L:** 36% / 28% / 36%
-- **lambda_home / lambda_away:** 1.40 / 1.40
+- **Recommended pick (EV-optimal):** 8-0 (EV ~ 5.17 pts)
+- **W / D / L:** 100% / 0% / 0%
+- **lambda_home / lambda_away:** 21.79 / 0.09
 - **Top scorelines:**
-  - 1:1 (13%)
-  - 2:1 (8%)
-  - 1:2 (8%)
-  - 1:0 (7%)
+  - 8:0 (60%)
+  - 7:0 (22%)
+  - 6:0 (7%)
+  - 8:1 (5%)
 
-- **Why:** None and None look evenly matched. Recent form (last 5): None no recent matches; None no recent matches. Model gives None 36%, draw 28%, None 36%.
+- **Why:** GER is the heavy favourite. Recent form (last 5): GER 4 wins, 1 loss; None no recent matches. Model gives GER 100%, draw 0%, None 0%.
 
 
 ### None vs None - Tue 30 Jun 01:00 UTC
@@ -382,19 +382,19 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 - **Why:** None and None look evenly matched. Recent form (last 5): None no recent matches; None no recent matches. Model gives None 36%, draw 28%, None 36%.
 
 
-### None vs None - Wed 01 Jul 01:00 UTC
+### MEX vs None - Wed 01 Jul 01:00 UTC
 
 - **Stage:** GROUP
-- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
-- **W / D / L:** 36% / 28% / 36%
-- **lambda_home / lambda_away:** 1.40 / 1.40
+- **Recommended pick (EV-optimal):** 8-0 (EV ~ 4.49 pts)
+- **W / D / L:** 100% / 0% / 0%
+- **lambda_home / lambda_away:** 10.47 / 0.19
 - **Top scorelines:**
-  - 1:1 (13%)
-  - 2:1 (8%)
-  - 1:2 (8%)
-  - 1:0 (7%)
+  - 8:0 (30%)
+  - 7:0 (23%)
+  - 6:0 (15%)
+  - 5:0 (9%)
 
-- **Why:** None and None look evenly matched. Recent form (last 5): None no recent matches; None no recent matches. Model gives None 36%, draw 28%, None 36%.
+- **Why:** MEX is the clear favourite. Recent form (last 5): MEX 4 wins, 1 draw; None no recent matches. Model gives MEX 100%, draw 0%, None 0%.
 
 
 ### None vs None - Wed 01 Jul 16:00 UTC
@@ -427,19 +427,19 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 - **Why:** None and None look evenly matched. Recent form (last 5): None no recent matches; None no recent matches. Model gives None 36%, draw 28%, None 36%.
 
 
-### None vs None - Thu 02 Jul 00:00 UTC
+### USA vs None - Thu 02 Jul 00:00 UTC
 
 - **Stage:** GROUP
-- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
-- **W / D / L:** 36% / 28% / 36%
-- **lambda_home / lambda_away:** 1.40 / 1.40
+- **Recommended pick (EV-optimal):** 8-0 (EV ~ 4.76 pts)
+- **W / D / L:** 100% / 0% / 0%
+- **lambda_home / lambda_away:** 13.68 / 0.14
 - **Top scorelines:**
-  - 1:1 (13%)
-  - 2:1 (8%)
-  - 1:2 (8%)
-  - 1:0 (7%)
+  - 8:0 (42%)
+  - 7:0 (24%)
+  - 6:0 (12%)
+  - 8:1 (6%)
 
-- **Why:** None and None look evenly matched. Recent form (last 5): None no recent matches; None no recent matches. Model gives None 36%, draw 28%, None 36%.
+- **Why:** USA is the clear favourite. Recent form (last 5): USA 2 wins, 3 losses; None no recent matches. Model gives USA 100%, draw 0%, None 0%. USA plays at home.
 
 
 ### None vs None - Thu 02 Jul 19:00 UTC
@@ -502,19 +502,19 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 - **Why:** None and None look evenly matched. Recent form (last 5): None no recent matches; None no recent matches. Model gives None 36%, draw 28%, None 36%.
 
 
-### None vs None - Fri 03 Jul 22:00 UTC
+### ARG vs None - Fri 03 Jul 22:00 UTC
 
 - **Stage:** GROUP
-- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
-- **W / D / L:** 36% / 28% / 36%
-- **lambda_home / lambda_away:** 1.40 / 1.40
+- **Recommended pick (EV-optimal):** 8-0 (EV ~ 5.66 pts)
+- **W / D / L:** 100% / 0% / 0%
+- **lambda_home / lambda_away:** 57.20 / 0.03
 - **Top scorelines:**
-  - 1:1 (13%)
-  - 2:1 (8%)
-  - 1:2 (8%)
-  - 1:0 (7%)
+  - 8:0 (83%)
+  - 7:0 (12%)
+  - 8:1 (3%)
+  - 6:0 (1%)
 
-- **Why:** None and None look evenly matched. Recent form (last 5): None no recent matches; None no recent matches. Model gives None 36%, draw 28%, None 36%.
+- **Why:** ARG is the heavy favourite. Recent form (last 5): ARG 4 wins, 1 loss; None no recent matches. Model gives ARG 100%, draw 0%, None 0%.
 
 
 ### None vs None - Sat 04 Jul 01:30 UTC
