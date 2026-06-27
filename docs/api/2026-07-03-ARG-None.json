@@ -11,7 +11,7 @@
     0
   ],
   "expected_points": 5.663,
-  "lambda_home": 57.2,
+  "lambda_home": 57.199,
   "lambda_away": 0.034,
   "w_d_l": {
     "win": 1.0,
@@ -127,7 +127,7 @@
       0.0
     ],
     [
-      0.11661,
+      0.11662,
       0.004,
       7e-05,
       0.0,
@@ -150,5 +150,5 @@
     ]
   ],
   "rationale": "ARG is the heavy favourite. Recent form (last 5): ARG 4 wins, 1 loss; None no recent matches. Model gives ARG 100%, draw 0%, None 0%.",
-  "generated_at": "2026-06-26T22:56:41.432171+00:00"
+  "generated_at": "2026-06-27T15:05:56.891139+00:00"
 }

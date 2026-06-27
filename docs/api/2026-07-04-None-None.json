@@ -7,8 +7,8 @@
   "status": "SCHEDULED",
   "actual": null,
   "recommended_pick": [
-    1,
-    0
+    0,
+    1
   ],
   "expected_points": 1.866,
   "lambda_home": 1.4,
@@ -150,5 +150,5 @@
     ]
   ],
   "rationale": "None and None look evenly matched. Recent form (last 5): None no recent matches; None no recent matches. Model gives None 36%, draw 28%, None 36%.",
-  "generated_at": "2026-06-27T09:15:39.675878+00:00"
+  "generated_at": "2026-06-27T15:05:56.892203+00:00"
 }

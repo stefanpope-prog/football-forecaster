@@ -117,7 +117,7 @@
     ],
     [
       0.00105,
-      0.00136,
+      0.00135,
       0.00087,
       0.00037,
       0.00012,
@@ -150,5 +150,5 @@
     ]
   ],
   "rationale": "COD and UZB look evenly matched. Recent form (last 5): COD 3 draws, 2 losses; UZB 1 win, 2 draws, 2 losses. Model gives COD 42%, draw 27%, UZB 31%.",
-  "generated_at": "2026-06-27T09:15:39.668712+00:00"
+  "generated_at": "2026-06-27T15:05:56.882654+00:00"
 }
