@@ -1,6 +1,6 @@
 # Football Forecaster - Prompt Pack
 
-Generated 2026-06-28 18:57 UTC. Paste this whole document into Claude Chat, then ask any question about the upcoming fixtures.
+Generated 2026-06-28 22:44 UTC. Paste this whole document into Claude Chat, then ask any question about the upcoming fixtures.
 
 ## System prompt for Claude
 
@@ -20,21 +20,6 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ---
 
 ## Fixtures
-
-
-### RSA vs CAN - Sun 28 Jun 19:00 UTC
-
-- **Stage:** GROUP
-- **Recommended pick (EV-optimal):** 0-2 (EV ~ 3.52 pts)
-- **W / D / L:** 4% / 11% / 85%
-- **lambda_home / lambda_away:** 0.63 / 3.12
-- **Top scorelines:**
-  - 0:3 (12%)
-  - 0:2 (12%)
-  - 0:4 (9%)
-  - 1:3 (8%)
-
-- **Why:** CAN is the favourite. Recent form (last 5): RSA 1 draw, 4 losses; CAN 2 wins, 3 draws. Past 1 meetings: RSA won 1. Model gives RSA 4%, draw 11%, CAN 85%.
 
 
 ### BRA vs JPN - Mon 29 Jun 17:00 UTC
