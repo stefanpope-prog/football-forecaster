@@ -5,7 +5,10 @@
   "away": "NOR",
   "stage": "GROUP",
   "status": "SCHEDULED",
-  "actual": null,
+  "actual": [
+    0,
+    0
+  ],
   "recommended_pick": [
     2,
     0
@@ -150,5 +153,5 @@
     ]
   ],
   "rationale": "CIV is the favourite. Recent form (last 5): CIV 3 wins, 1 draw, 1 loss; NOR 2 wins, 2 draws, 1 loss. Model gives CIV 77%, draw 16%, NOR 8%.",
-  "generated_at": "2026-06-30T10:43:18.900199+00:00"
+  "generated_at": "2026-06-30T17:31:55.452102+00:00"
 }
