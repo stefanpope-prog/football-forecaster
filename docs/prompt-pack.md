@@ -1,6 +1,6 @@
 # Football Forecaster - Prompt Pack
 
-Generated 2026-06-30 17:31 UTC. Paste this whole document into Claude Chat, then ask any question about the upcoming fixtures.
+Generated 2026-06-30 22:54 UTC. Paste this whole document into Claude Chat, then ask any question about the upcoming fixtures.
 
 ## System prompt for Claude
 
@@ -20,21 +20,6 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ---
 
 ## Fixtures
-
-
-### CIV vs NOR - Tue 30 Jun 17:00 UTC
-
-- **Stage:** GROUP
-- **Recommended pick (EV-optimal):** 2-0 (EV ~ 3.24 pts)
-- **W / D / L:** 77% / 16% / 8%
-- **lambda_home / lambda_away:** 2.62 / 0.75
-- **Top scorelines:**
-  - 2:0 (12%)
-  - 3:0 (10%)
-  - 2:1 (9%)
-  - 1:0 (8%)
-
-- **Why:** CIV is the favourite. Recent form (last 5): CIV 3 wins, 1 draw, 1 loss; NOR 2 wins, 2 draws, 1 loss. Model gives CIV 77%, draw 16%, NOR 8%.
 
 
 ### FRA vs SWE - Tue 30 Jun 21:00 UTC
