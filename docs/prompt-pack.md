@@ -1,6 +1,6 @@
 # Football Forecaster - Prompt Pack
 
-Generated 2026-07-02 17:16 UTC. Paste this whole document into Claude Chat, then ask any question about the upcoming fixtures.
+Generated 2026-07-02 21:56 UTC. Paste this whole document into Claude Chat, then ask any question about the upcoming fixtures.
 
 ## System prompt for Claude
 
@@ -20,21 +20,6 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ---
 
 ## Fixtures
-
-
-### ESP vs AUT - Thu 02 Jul 19:00 UTC
-
-- **Stage:** GROUP
-- **Recommended pick (EV-optimal):** 8-0 (EV ~ 5.26 pts)
-- **W / D / L:** 100% / 0% / 0%
-- **lambda_home / lambda_away:** 24.84 / 0.08
-- **Top scorelines:**
-  - 8:0 (64%)
-  - 7:0 (21%)
-  - 6:0 (6%)
-  - 8:1 (5%)
-
-- **Why:** ESP is the heavy favourite. Recent form (last 5): ESP 2 wins, 3 draws; AUT 3 wins, 1 draw, 1 loss. Past 3 meetings: ESP won 2, drew 1. Model gives ESP 100%, draw 0%, AUT 0%.
 
 
 ### POR vs CRO - Thu 02 Jul 23:00 UTC
@@ -57,7 +42,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 - **Stage:** GROUP
 - **Recommended pick (EV-optimal):** 8-0 (EV ~ 4.55 pts)
 - **W / D / L:** 100% / 0% / 0%
-- **lambda_home / lambda_away:** 11.12 / 0.17
+- **lambda_home / lambda_away:** 11.11 / 0.17
 - **Top scorelines:**
   - 8:0 (33%)
   - 7:0 (23%)
@@ -87,7 +72,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 - **Stage:** GROUP
 - **Recommended pick (EV-optimal):** 8-0 (EV ~ 5.60 pts)
 - **W / D / L:** 100% / 0% / 0%
-- **lambda_home / lambda_away:** 47.79 / 0.04
+- **lambda_home / lambda_away:** 47.75 / 0.04
 - **Top scorelines:**
   - 8:0 (80%)
   - 7:0 (13%)
@@ -102,7 +87,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 - **Stage:** GROUP
 - **Recommended pick (EV-optimal):** 5-0 (EV ~ 3.99 pts)
 - **W / D / L:** 98% / 2% / 0%
-- **lambda_home / lambda_away:** 5.18 / 0.37
+- **lambda_home / lambda_away:** 5.17 / 0.37
 - **Top scorelines:**
   - 5:0 (13%)
   - 4:0 (13%)
@@ -130,9 +115,9 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### PAR vs FRA - Sat 04 Jul 21:00 UTC
 
 - **Stage:** R16
-- **Recommended pick (EV-optimal):** 0-8 (EV ~ 4.95 pts)
+- **Recommended pick (EV-optimal):** 0-8 (EV ~ 4.94 pts)
 - **W / D / L:** 0% / 0% / 100%
-- **lambda_home / lambda_away:** 0.12 / 16.53
+- **lambda_home / lambda_away:** 0.12 / 16.52
 - **Top scorelines:**
   - 0:8 (50%)
   - 0:7 (24%)
@@ -147,7 +132,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 - **Stage:** R16
 - **Recommended pick (EV-optimal):** 8-0 (EV ~ 5.10 pts)
 - **W / D / L:** 100% / 0% / 0%
-- **lambda_home / lambda_away:** 19.76 / 0.10
+- **lambda_home / lambda_away:** 19.74 / 0.10
 - **Top scorelines:**
   - 8:0 (57%)
   - 7:0 (23%)
@@ -182,7 +167,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
   - 1:1 (13%)
   - 2:1 (8%)
   - 1:2 (8%)
-  - 1:0 (7%)
+  - 1:0 (8%)
 
 - **Why:** None and None look evenly matched. Recent form (last 5): None no recent matches; None no recent matches. Model gives None 36%, draw 28%, None 36%.
 
@@ -212,7 +197,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
   - 1:1 (13%)
   - 2:1 (8%)
   - 1:2 (8%)
-  - 1:0 (7%)
+  - 1:0 (8%)
 
 - **Why:** None and None look evenly matched. Recent form (last 5): None no recent matches; None no recent matches. Model gives None 36%, draw 28%, None 36%.
 
@@ -227,7 +212,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
   - 1:1 (13%)
   - 2:1 (8%)
   - 1:2 (8%)
-  - 1:0 (7%)
+  - 1:0 (8%)
 
 - **Why:** None and None look evenly matched. Recent form (last 5): None no recent matches; None no recent matches. Model gives None 36%, draw 28%, None 36%.
 
@@ -242,7 +227,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
   - 1:1 (13%)
   - 2:1 (8%)
   - 1:2 (8%)
-  - 1:0 (7%)
+  - 1:0 (8%)
 
 - **Why:** None and None look evenly matched. Recent form (last 5): None no recent matches; None no recent matches. Model gives None 36%, draw 28%, None 36%.
 
@@ -257,7 +242,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
   - 1:1 (13%)
   - 2:1 (8%)
   - 1:2 (8%)
-  - 1:0 (7%)
+  - 1:0 (8%)
 
 - **Why:** None and None look evenly matched. Recent form (last 5): None no recent matches; None no recent matches. Model gives None 36%, draw 28%, None 36%.
 
@@ -272,7 +257,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
   - 1:1 (13%)
   - 2:1 (8%)
   - 1:2 (8%)
-  - 1:0 (7%)
+  - 1:0 (8%)
 
 - **Why:** None and None look evenly matched. Recent form (last 5): None no recent matches; None no recent matches. Model gives None 36%, draw 28%, None 36%.
 
@@ -287,7 +272,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
   - 1:1 (13%)
   - 2:1 (8%)
   - 1:2 (8%)
-  - 1:0 (7%)
+  - 1:0 (8%)
 
 - **Why:** None and None look evenly matched. Recent form (last 5): None no recent matches; None no recent matches. Model gives None 36%, draw 28%, None 36%.
 
@@ -302,7 +287,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
   - 1:1 (13%)
   - 2:1 (8%)
   - 1:2 (8%)
-  - 1:0 (7%)
+  - 1:0 (8%)
 
 - **Why:** None and None look evenly matched. Recent form (last 5): None no recent matches; None no recent matches. Model gives None 36%, draw 28%, None 36%.
 
@@ -317,7 +302,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
   - 1:1 (13%)
   - 2:1 (8%)
   - 1:2 (8%)
-  - 1:0 (7%)
+  - 1:0 (8%)
 
 - **Why:** None and None look evenly matched. Recent form (last 5): None no recent matches; None no recent matches. Model gives None 36%, draw 28%, None 36%.
 
@@ -332,7 +317,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
   - 1:1 (13%)
   - 2:1 (8%)
   - 1:2 (8%)
-  - 1:0 (7%)
+  - 1:0 (8%)
 
 - **Why:** None and None look evenly matched. Recent form (last 5): None no recent matches; None no recent matches. Model gives None 36%, draw 28%, None 36%.
 
@@ -347,7 +332,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
   - 1:1 (13%)
   - 2:1 (8%)
   - 1:2 (8%)
-  - 1:0 (7%)
+  - 1:0 (8%)
 
 - **Why:** None and None look evenly matched. Recent form (last 5): None no recent matches; None no recent matches. Model gives None 36%, draw 28%, None 36%.
 
