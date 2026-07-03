@@ -1,6 +1,6 @@
 # Football Forecaster - Prompt Pack
 
-Generated 2026-07-02 21:56 UTC. Paste this whole document into Claude Chat, then ask any question about the upcoming fixtures.
+Generated 2026-07-03 09:48 UTC. Paste this whole document into Claude Chat, then ask any question about the upcoming fixtures.
 
 ## System prompt for Claude
 
@@ -20,36 +20,6 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ---
 
 ## Fixtures
-
-
-### POR vs CRO - Thu 02 Jul 23:00 UTC
-
-- **Stage:** GROUP
-- **Recommended pick (EV-optimal):** 1-0 (EV ~ 2.38 pts)
-- **W / D / L:** 51% / 26% / 23%
-- **lambda_home / lambda_away:** 1.72 / 1.11
-- **Top scorelines:**
-  - 1:1 (12%)
-  - 2:1 (10%)
-  - 1:0 (9%)
-  - 2:0 (9%)
-
-- **Why:** slight edge to POR. Recent form (last 5): POR 3 wins, 1 draw, 1 loss; CRO 2 wins, 1 draw, 2 losses. Past 3 meetings: POR won 1, drew 1, CRO won 1. Model gives POR 51%, draw 26%, CRO 23%.
-
-
-### SUI vs ALG - Fri 03 Jul 03:00 UTC
-
-- **Stage:** GROUP
-- **Recommended pick (EV-optimal):** 8-0 (EV ~ 4.55 pts)
-- **W / D / L:** 100% / 0% / 0%
-- **lambda_home / lambda_away:** 11.11 / 0.17
-- **Top scorelines:**
-  - 8:0 (33%)
-  - 7:0 (23%)
-  - 6:0 (15%)
-  - 5:0 (8%)
-
-- **Why:** SUI is the clear favourite. Recent form (last 5): SUI 2 wins, 2 draws, 1 loss; ALG 3 wins, 1 draw, 1 loss. Past 2 meetings: SUI won 2. Model gives SUI 100%, draw 0%, ALG 0%.
 
 
 ### AUS vs EGY - Fri 03 Jul 18:00 UTC
@@ -72,7 +42,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 - **Stage:** GROUP
 - **Recommended pick (EV-optimal):** 8-0 (EV ~ 5.60 pts)
 - **W / D / L:** 100% / 0% / 0%
-- **lambda_home / lambda_away:** 47.75 / 0.04
+- **lambda_home / lambda_away:** 47.72 / 0.04
 - **Top scorelines:**
   - 8:0 (80%)
   - 7:0 (13%)
@@ -117,7 +87,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 - **Stage:** R16
 - **Recommended pick (EV-optimal):** 0-8 (EV ~ 4.94 pts)
 - **W / D / L:** 0% / 0% / 100%
-- **lambda_home / lambda_away:** 0.12 / 16.52
+- **lambda_home / lambda_away:** 0.12 / 16.51
 - **Top scorelines:**
   - 0:8 (50%)
   - 0:7 (24%)
@@ -130,11 +100,11 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### BRA vs NOR - Sun 05 Jul 20:00 UTC
 
 - **Stage:** R16
-- **Recommended pick (EV-optimal):** 8-0 (EV ~ 5.10 pts)
+- **Recommended pick (EV-optimal):** 8-0 (EV ~ 5.09 pts)
 - **W / D / L:** 100% / 0% / 0%
-- **lambda_home / lambda_away:** 19.74 / 0.10
+- **lambda_home / lambda_away:** 19.73 / 0.10
 - **Top scorelines:**
-  - 8:0 (57%)
+  - 8:0 (56%)
   - 7:0 (23%)
   - 6:0 (8%)
   - 8:1 (5%)
@@ -147,7 +117,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 - **Stage:** R16
 - **Recommended pick (EV-optimal):** 0-3 (EV ~ 3.68 pts)
 - **W / D / L:** 3% / 8% / 90%
-- **lambda_home / lambda_away:** 0.55 / 3.49
+- **lambda_home / lambda_away:** 0.55 / 3.48
 - **Top scorelines:**
   - 0:3 (13%)
   - 0:4 (11%)
