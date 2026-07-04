@@ -1,6 +1,6 @@
 # Football Forecaster - Prompt Pack
 
-Generated 2026-07-04 15:48 UTC. Paste this whole document into Claude Chat, then ask any question about the upcoming fixtures.
+Generated 2026-07-04 20:16 UTC. Paste this whole document into Claude Chat, then ask any question about the upcoming fixtures.
 
 ## System prompt for Claude
 
@@ -20,21 +20,6 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ---
 
 ## Fixtures
-
-
-### CAN vs MAR - Sat 04 Jul 17:00 UTC
-
-- **Stage:** R16
-- **Recommended pick (EV-optimal):** 0-1 (EV ~ 2.66 pts)
-- **W / D / L:** 17% / 23% / 59%
-- **lambda_home / lambda_away:** 0.99 / 1.98
-- **Top scorelines:**
-  - 1:1 (11%)
-  - 0:2 (10%)
-  - 1:2 (10%)
-  - 0:1 (9%)
-
-- **Why:** slight edge to MAR. Recent form (last 5): CAN 2 wins, 3 draws; MAR 2 wins, 3 draws. Past 3 meetings: drew 1, MAR won 2. Model gives CAN 17%, draw 23%, MAR 59%.
 
 
 ### PAR vs FRA - Sat 04 Jul 21:00 UTC
