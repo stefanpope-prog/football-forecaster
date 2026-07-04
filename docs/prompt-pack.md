@@ -1,6 +1,6 @@
 # Football Forecaster - Prompt Pack
 
-Generated 2026-07-03 20:46 UTC. Paste this whole document into Claude Chat, then ask any question about the upcoming fixtures.
+Generated 2026-07-04 07:31 UTC. Paste this whole document into Claude Chat, then ask any question about the upcoming fixtures.
 
 ## System prompt for Claude
 
@@ -22,72 +22,27 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ## Fixtures
 
 
-### AUS vs EGY - Fri 03 Jul 18:00 UTC
-
-- **Stage:** GROUP
-- **Recommended pick (EV-optimal):** 1-0 (EV ~ 2.69 pts)
-- **W / D / L:** 60% / 23% / 17%
-- **lambda_home / lambda_away:** 1.99 / 0.96
-- **Top scorelines:**
-  - 1:1 (11%)
-  - 2:0 (10%)
-  - 2:1 (10%)
-  - 1:0 (9%)
-
-- **Why:** slight edge to AUS. Recent form (last 5): AUS 2 wins, 1 draw, 2 losses; EGY 2 wins, 2 draws, 1 loss. Past 2 meetings: drew 1, EGY won 1. Model gives AUS 60%, draw 23%, EGY 17%.
-
-
-### ARG vs CPV - Fri 03 Jul 22:00 UTC
-
-- **Stage:** GROUP
-- **Recommended pick (EV-optimal):** 8-0 (EV ~ 5.60 pts)
-- **W / D / L:** 100% / 0% / 0%
-- **lambda_home / lambda_away:** 47.72 / 0.04
-- **Top scorelines:**
-  - 8:0 (80%)
-  - 7:0 (13%)
-  - 8:1 (3%)
-  - 6:0 (2%)
-
-- **Why:** ARG is the heavy favourite. Recent form (last 5): ARG 4 wins, 1 loss; CPV 2 wins, 2 draws, 1 loss. Model gives ARG 100%, draw 0%, CPV 0%.
-
-
-### COL vs GHA - Sat 04 Jul 01:30 UTC
-
-- **Stage:** GROUP
-- **Recommended pick (EV-optimal):** 5-0 (EV ~ 3.99 pts)
-- **W / D / L:** 98% / 2% / 0%
-- **lambda_home / lambda_away:** 5.17 / 0.37
-- **Top scorelines:**
-  - 5:0 (13%)
-  - 4:0 (13%)
-  - 6:0 (11%)
-  - 3:0 (10%)
-
-- **Why:** COL is the clear favourite. Recent form (last 5): COL 3 wins, 2 losses; GHA 1 draw, 4 losses. Model gives COL 98%, draw 2%, GHA 0%.
-
-
 ### CAN vs MAR - Sat 04 Jul 17:00 UTC
 
 - **Stage:** R16
 - **Recommended pick (EV-optimal):** 0-1 (EV ~ 2.66 pts)
-- **W / D / L:** 17% / 24% / 59%
-- **lambda_home / lambda_away:** 0.98 / 1.96
+- **W / D / L:** 17% / 23% / 59%
+- **lambda_home / lambda_away:** 0.99 / 1.98
 - **Top scorelines:**
   - 1:1 (11%)
   - 0:2 (10%)
   - 1:2 (10%)
   - 0:1 (9%)
 
-- **Why:** slight edge to MAR. Recent form (last 5): CAN 2 wins, 3 draws; MAR 2 wins, 3 draws. Past 3 meetings: drew 1, MAR won 2. Model gives CAN 17%, draw 24%, MAR 59%.
+- **Why:** slight edge to MAR. Recent form (last 5): CAN 2 wins, 3 draws; MAR 2 wins, 3 draws. Past 3 meetings: drew 1, MAR won 2. Model gives CAN 17%, draw 23%, MAR 59%.
 
 
 ### PAR vs FRA - Sat 04 Jul 21:00 UTC
 
 - **Stage:** R16
-- **Recommended pick (EV-optimal):** 0-8 (EV ~ 4.94 pts)
+- **Recommended pick (EV-optimal):** 0-8 (EV ~ 4.95 pts)
 - **W / D / L:** 0% / 0% / 100%
-- **lambda_home / lambda_away:** 0.12 / 16.51
+- **lambda_home / lambda_away:** 0.12 / 16.72
 - **Top scorelines:**
   - 0:8 (50%)
   - 0:7 (24%)
@@ -100,14 +55,14 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### BRA vs NOR - Sun 05 Jul 20:00 UTC
 
 - **Stage:** R16
-- **Recommended pick (EV-optimal):** 8-0 (EV ~ 5.09 pts)
+- **Recommended pick (EV-optimal):** 8-0 (EV ~ 5.10 pts)
 - **W / D / L:** 100% / 0% / 0%
-- **lambda_home / lambda_away:** 19.73 / 0.10
+- **lambda_home / lambda_away:** 19.98 / 0.10
 - **Top scorelines:**
-  - 8:0 (56%)
+  - 8:0 (57%)
   - 7:0 (23%)
   - 6:0 (8%)
-  - 8:1 (5%)
+  - 8:1 (6%)
 
 - **Why:** BRA is the heavy favourite. Recent form (last 5): BRA 3 wins, 1 draw, 1 loss; NOR 2 wins, 2 draws, 1 loss. Past 3 meetings: drew 1, NOR won 2. Model gives BRA 100%, draw 0%, NOR 0%.
 
@@ -116,75 +71,75 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 
 - **Stage:** R16
 - **Recommended pick (EV-optimal):** 0-3 (EV ~ 3.68 pts)
-- **W / D / L:** 3% / 8% / 90%
-- **lambda_home / lambda_away:** 0.55 / 3.48
+- **W / D / L:** 2% / 8% / 90%
+- **lambda_home / lambda_away:** 0.56 / 3.53
 - **Top scorelines:**
-  - 0:3 (13%)
+  - 0:3 (12%)
   - 0:4 (11%)
   - 0:2 (11%)
   - 0:5 (8%)
 
-- **Why:** ENG is the favourite. Recent form (last 5): MEX 4 wins, 1 draw; ENG 3 wins, 1 draw, 1 loss. Past 3 meetings: ENG won 3. Model gives MEX 3%, draw 8%, ENG 90%.
+- **Why:** ENG is the favourite. Recent form (last 5): MEX 4 wins, 1 draw; ENG 3 wins, 1 draw, 1 loss. Past 3 meetings: ENG won 3. Model gives MEX 2%, draw 8%, ENG 90%.
 
 
-### None vs None - Mon 06 Jul 19:00 UTC
+### POR vs ESP - Mon 06 Jul 19:00 UTC
 
 - **Stage:** R16
-- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
-- **W / D / L:** 36% / 28% / 36%
-- **lambda_home / lambda_away:** 1.38 / 1.38
+- **Recommended pick (EV-optimal):** 1-2 (EV ~ 2.42 pts)
+- **W / D / L:** 22% / 26% / 52%
+- **lambda_home / lambda_away:** 1.10 / 1.78
 - **Top scorelines:**
-  - 1:1 (13%)
-  - 2:1 (8%)
-  - 1:2 (8%)
-  - 1:0 (8%)
+  - 1:1 (12%)
+  - 1:2 (10%)
+  - 0:2 (9%)
+  - 0:1 (9%)
 
-- **Why:** None and None look evenly matched. Recent form (last 5): None no recent matches; None no recent matches. Model gives None 36%, draw 28%, None 36%.
+- **Why:** slight edge to ESP. Recent form (last 5): POR 3 wins, 1 draw, 1 loss; ESP 2 wins, 3 draws. Past 3 meetings: drew 2, ESP won 1. Model gives POR 22%, draw 26%, ESP 52%.
 
 
 ### USA vs BEL - Tue 07 Jul 00:00 UTC
 
 - **Stage:** R16
-- **Recommended pick (EV-optimal):** 0-1 (EV ~ 2.29 pts)
-- **W / D / L:** 25% / 27% / 48%
-- **lambda_home / lambda_away:** 1.15 / 1.66
+- **Recommended pick (EV-optimal):** 1-2 (EV ~ 2.28 pts)
+- **W / D / L:** 26% / 26% / 48%
+- **lambda_home / lambda_away:** 1.17 / 1.67
 - **Top scorelines:**
   - 1:1 (13%)
   - 1:2 (10%)
   - 0:1 (9%)
   - 0:2 (8%)
 
-- **Why:** slight edge to BEL. Recent form (last 5): USA 2 wins, 3 losses; BEL 4 wins, 1 draw. Past 3 meetings: BEL won 3. Model gives USA 25%, draw 27%, BEL 48%. USA plays at home.
+- **Why:** slight edge to BEL. Recent form (last 5): USA 2 wins, 3 losses; BEL 4 wins, 1 draw. Past 3 meetings: BEL won 3. Model gives USA 26%, draw 26%, BEL 48%. USA plays at home.
 
 
-### None vs None - Tue 07 Jul 16:00 UTC
-
-- **Stage:** R16
-- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
-- **W / D / L:** 36% / 28% / 36%
-- **lambda_home / lambda_away:** 1.38 / 1.38
-- **Top scorelines:**
-  - 1:1 (13%)
-  - 2:1 (8%)
-  - 1:2 (8%)
-  - 1:0 (8%)
-
-- **Why:** None and None look evenly matched. Recent form (last 5): None no recent matches; None no recent matches. Model gives None 36%, draw 28%, None 36%.
-
-
-### None vs None - Tue 07 Jul 20:00 UTC
+### ARG vs EGY - Tue 07 Jul 16:00 UTC
 
 - **Stage:** R16
-- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
-- **W / D / L:** 36% / 28% / 36%
-- **lambda_home / lambda_away:** 1.38 / 1.38
+- **Recommended pick (EV-optimal):** 8-0 (EV ~ 4.93 pts)
+- **W / D / L:** 100% / 0% / 0%
+- **lambda_home / lambda_away:** 16.40 / 0.12
 - **Top scorelines:**
-  - 1:1 (13%)
-  - 2:1 (8%)
-  - 1:2 (8%)
-  - 1:0 (8%)
+  - 8:0 (49%)
+  - 7:0 (24%)
+  - 6:0 (10%)
+  - 8:1 (6%)
 
-- **Why:** None and None look evenly matched. Recent form (last 5): None no recent matches; None no recent matches. Model gives None 36%, draw 28%, None 36%.
+- **Why:** ARG is the heavy favourite. Recent form (last 5): ARG 4 wins, 1 loss; EGY 2 wins, 2 draws, 1 loss. Past 2 meetings: ARG won 2. Model gives ARG 100%, draw 0%, EGY 0%.
+
+
+### SUI vs COL - Tue 07 Jul 20:00 UTC
+
+- **Stage:** R16
+- **Recommended pick (EV-optimal):** 1-2 (EV ~ 2.32 pts)
+- **W / D / L:** 25% / 26% / 49%
+- **lambda_home / lambda_away:** 1.15 / 1.70
+- **Top scorelines:**
+  - 1:1 (12%)
+  - 1:2 (10%)
+  - 0:1 (9%)
+  - 0:2 (8%)
+
+- **Why:** slight edge to COL. Recent form (last 5): SUI 2 wins, 2 draws, 1 loss; COL 3 wins, 2 losses. Past 3 meetings: SUI won 1, COL won 2. Model gives SUI 25%, draw 26%, COL 49%.
 
 
 ### None vs None - Thu 09 Jul 20:00 UTC
@@ -192,12 +147,12 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 - **Stage:** QF
 - **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
-- **lambda_home / lambda_away:** 1.38 / 1.38
+- **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**
   - 1:1 (13%)
   - 2:1 (8%)
   - 1:2 (8%)
-  - 1:0 (8%)
+  - 1:0 (7%)
 
 - **Why:** None and None look evenly matched. Recent form (last 5): None no recent matches; None no recent matches. Model gives None 36%, draw 28%, None 36%.
 
@@ -207,12 +162,12 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 - **Stage:** QF
 - **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
-- **lambda_home / lambda_away:** 1.38 / 1.38
+- **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**
   - 1:1 (13%)
   - 2:1 (8%)
   - 1:2 (8%)
-  - 1:0 (8%)
+  - 1:0 (7%)
 
 - **Why:** None and None look evenly matched. Recent form (last 5): None no recent matches; None no recent matches. Model gives None 36%, draw 28%, None 36%.
 
@@ -222,12 +177,12 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 - **Stage:** QF
 - **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
-- **lambda_home / lambda_away:** 1.38 / 1.38
+- **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**
   - 1:1 (13%)
   - 2:1 (8%)
   - 1:2 (8%)
-  - 1:0 (8%)
+  - 1:0 (7%)
 
 - **Why:** None and None look evenly matched. Recent form (last 5): None no recent matches; None no recent matches. Model gives None 36%, draw 28%, None 36%.
 
@@ -237,12 +192,12 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 - **Stage:** QF
 - **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
-- **lambda_home / lambda_away:** 1.38 / 1.38
+- **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**
   - 1:1 (13%)
   - 2:1 (8%)
   - 1:2 (8%)
-  - 1:0 (8%)
+  - 1:0 (7%)
 
 - **Why:** None and None look evenly matched. Recent form (last 5): None no recent matches; None no recent matches. Model gives None 36%, draw 28%, None 36%.
 
@@ -252,12 +207,12 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 - **Stage:** SF
 - **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
-- **lambda_home / lambda_away:** 1.38 / 1.38
+- **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**
   - 1:1 (13%)
   - 2:1 (8%)
   - 1:2 (8%)
-  - 1:0 (8%)
+  - 1:0 (7%)
 
 - **Why:** None and None look evenly matched. Recent form (last 5): None no recent matches; None no recent matches. Model gives None 36%, draw 28%, None 36%.
 
@@ -267,12 +222,12 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 - **Stage:** SF
 - **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
-- **lambda_home / lambda_away:** 1.38 / 1.38
+- **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**
   - 1:1 (13%)
   - 2:1 (8%)
   - 1:2 (8%)
-  - 1:0 (8%)
+  - 1:0 (7%)
 
 - **Why:** None and None look evenly matched. Recent form (last 5): None no recent matches; None no recent matches. Model gives None 36%, draw 28%, None 36%.
 
@@ -282,12 +237,12 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 - **Stage:** F
 - **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
-- **lambda_home / lambda_away:** 1.38 / 1.38
+- **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**
   - 1:1 (13%)
   - 2:1 (8%)
   - 1:2 (8%)
-  - 1:0 (8%)
+  - 1:0 (7%)
 
 - **Why:** None and None look evenly matched. Recent form (last 5): None no recent matches; None no recent matches. Model gives None 36%, draw 28%, None 36%.
 
@@ -297,12 +252,12 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 - **Stage:** F
 - **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
-- **lambda_home / lambda_away:** 1.38 / 1.38
+- **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**
   - 1:1 (13%)
   - 2:1 (8%)
   - 1:2 (8%)
-  - 1:0 (8%)
+  - 1:0 (7%)
 
 - **Why:** None and None look evenly matched. Recent form (last 5): None no recent matches; None no recent matches. Model gives None 36%, draw 28%, None 36%.
 
