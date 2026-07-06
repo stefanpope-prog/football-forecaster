@@ -5,7 +5,10 @@
   "away": "ESP",
   "stage": "R16",
   "status": "SCHEDULED",
-  "actual": null,
+  "actual": [
+    0,
+    1
+  ],
   "recommended_pick": [
     0,
     0
@@ -150,5 +153,5 @@
     ]
   ],
   "rationale": "slight edge to ESP. Recent form (last 5): POR 3 wins, 1 draw, 1 loss; ESP 2 wins, 3 draws. Past 3 meetings: drew 2, ESP won 1. Model gives POR 20%, draw 44%, ESP 37%.",
-  "generated_at": "2026-07-06T13:05:28.275530+00:00"
+  "generated_at": "2026-07-06T21:02:14.673711+00:00"
 }
