@@ -1,6 +1,6 @@
 # Football Forecaster - Prompt Pack
 
-Generated 2026-07-07 10:18 UTC. Paste this whole document into Claude Chat, then ask any question about the upcoming fixtures.
+Generated 2026-07-07 18:36 UTC. Paste this whole document into Claude Chat, then ask any question about the upcoming fixtures.
 
 ## System prompt for Claude
 
@@ -20,21 +20,6 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ---
 
 ## Fixtures
-
-
-### ARG vs EGY - Tue 07 Jul 16:00 UTC
-
-- **Stage:** R16
-- **Recommended pick (EV-optimal):** 6-0 (EV ~ 4.33 pts)
-- **W / D / L:** 100% / 0% / 0%
-- **lambda_home / lambda_away:** 6.10 / 0.04
-- **Top scorelines:**
-  - 6:0 (18%)
-  - 5:0 (18%)
-  - 7:0 (16%)
-  - 4:0 (15%)
-
-- **Why:** ARG is the heavy favourite. Recent form (last 5): ARG 4 wins, 1 loss; EGY 2 wins, 2 draws, 1 loss. Past 2 meetings: ARG won 2. Model gives ARG 100%, draw 0%, EGY 0%.
 
 
 ### SUI vs COL - Tue 07 Jul 20:00 UTC
@@ -60,7 +45,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 - **lambda_home / lambda_away:** 2.02 / 0.13
 - **Top scorelines:**
   - 2:0 (24%)
-  - 1:0 (23%)
+  - 1:0 (24%)
   - 3:0 (16%)
   - 0:0 (12%)
 
@@ -87,7 +72,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 - **Stage:** QF
 - **Recommended pick (EV-optimal):** 0-5 (EV ~ 4.30 pts)
 - **W / D / L:** 0% / 1% / 99%
-- **lambda_home / lambda_away:** 0.05 / 5.14
+- **lambda_home / lambda_away:** 0.05 / 5.13
 - **Top scorelines:**
   - 0:5 (18%)
   - 0:4 (18%)
@@ -100,7 +85,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### None vs None - Sun 12 Jul 01:00 UTC
 
 - **Stage:** QF
-- **Recommended pick (EV-optimal):** 0-0 (EV ~ 2.99 pts)
+- **Recommended pick (EV-optimal):** 0-0 (EV ~ 3.00 pts)
 - **W / D / L:** 27% / 45% / 27%
 - **lambda_home / lambda_away:** 0.52 / 0.52
 - **Top scorelines:**
@@ -115,7 +100,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### None vs None - Tue 14 Jul 19:00 UTC
 
 - **Stage:** SF
-- **Recommended pick (EV-optimal):** 0-0 (EV ~ 2.99 pts)
+- **Recommended pick (EV-optimal):** 0-0 (EV ~ 3.00 pts)
 - **W / D / L:** 27% / 45% / 27%
 - **lambda_home / lambda_away:** 0.52 / 0.52
 - **Top scorelines:**
@@ -130,7 +115,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### None vs None - Wed 15 Jul 19:00 UTC
 
 - **Stage:** SF
-- **Recommended pick (EV-optimal):** 0-0 (EV ~ 2.99 pts)
+- **Recommended pick (EV-optimal):** 0-0 (EV ~ 3.00 pts)
 - **W / D / L:** 27% / 45% / 27%
 - **lambda_home / lambda_away:** 0.52 / 0.52
 - **Top scorelines:**
@@ -145,7 +130,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### None vs None - Sat 18 Jul 21:00 UTC
 
 - **Stage:** F
-- **Recommended pick (EV-optimal):** 0-0 (EV ~ 2.99 pts)
+- **Recommended pick (EV-optimal):** 0-0 (EV ~ 3.00 pts)
 - **W / D / L:** 27% / 45% / 27%
 - **lambda_home / lambda_away:** 0.52 / 0.52
 - **Top scorelines:**
@@ -160,7 +145,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### None vs None - Sun 19 Jul 19:00 UTC
 
 - **Stage:** F
-- **Recommended pick (EV-optimal):** 0-0 (EV ~ 2.99 pts)
+- **Recommended pick (EV-optimal):** 0-0 (EV ~ 3.00 pts)
 - **W / D / L:** 27% / 45% / 27%
 - **lambda_home / lambda_away:** 0.52 / 0.52
 - **Top scorelines:**
