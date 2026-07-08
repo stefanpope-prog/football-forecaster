@@ -1,6 +1,6 @@
 # Football Forecaster - Prompt Pack
 
-Generated 2026-07-07 18:36 UTC. Paste this whole document into Claude Chat, then ask any question about the upcoming fixtures.
+Generated 2026-07-08 20:44 UTC. Paste this whole document into Claude Chat, then ask any question about the upcoming fixtures.
 
 ## System prompt for Claude
 
@@ -20,21 +20,6 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ---
 
 ## Fixtures
-
-
-### SUI vs COL - Tue 07 Jul 20:00 UTC
-
-- **Stage:** R16
-- **Recommended pick (EV-optimal):** 0-0 (EV ~ 2.95 pts)
-- **W / D / L:** 21% / 44% / 35%
-- **lambda_home / lambda_away:** 0.43 / 0.63
-- **Top scorelines:**
-  - 0:0 (34%)
-  - 0:1 (22%)
-  - 1:0 (15%)
-  - 1:1 (9%)
-
-- **Why:** slight edge to COL. Recent form (last 5): SUI 2 wins, 2 draws, 1 loss; COL 3 wins, 2 losses. Past 3 meetings: SUI won 1, COL won 2. Model gives SUI 21%, draw 44%, COL 35%.
 
 
 ### FRA vs MAR - Thu 09 Jul 20:00 UTC
@@ -82,25 +67,25 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 - **Why:** ENG is the clear favourite. Recent form (last 5): NOR 2 wins, 2 draws, 1 loss; ENG 3 wins, 1 draw, 1 loss. Past 3 meetings: drew 1, ENG won 2. Model gives NOR 0%, draw 1%, ENG 99%.
 
 
-### None vs None - Sun 12 Jul 01:00 UTC
+### ARG vs SUI - Sun 12 Jul 01:00 UTC
 
 - **Stage:** QF
-- **Recommended pick (EV-optimal):** 0-0 (EV ~ 3.00 pts)
-- **W / D / L:** 27% / 45% / 27%
-- **lambda_home / lambda_away:** 0.52 / 0.52
+- **Recommended pick (EV-optimal):** 2-0 (EV ~ 4.00 pts)
+- **W / D / L:** 86% / 12% / 1%
+- **lambda_home / lambda_away:** 2.23 / 0.12
 - **Top scorelines:**
-  - 0:0 (35%)
-  - 1:0 (19%)
-  - 0:1 (19%)
-  - 1:1 (9%)
+  - 2:0 (24%)
+  - 1:0 (21%)
+  - 3:0 (18%)
+  - 4:0 (10%)
 
-- **Why:** None and None look evenly matched. Recent form (last 5): None no recent matches; None no recent matches. Model gives None 27%, draw 45%, None 27%.
+- **Why:** ARG is the clear favourite. Recent form (last 5): ARG 4 wins, 1 loss; SUI 2 wins, 2 draws, 1 loss. Past 3 meetings: ARG won 2, drew 1. Model gives ARG 86%, draw 12%, SUI 1%.
 
 
 ### None vs None - Tue 14 Jul 19:00 UTC
 
 - **Stage:** SF
-- **Recommended pick (EV-optimal):** 0-0 (EV ~ 3.00 pts)
+- **Recommended pick (EV-optimal):** 0-0 (EV ~ 2.99 pts)
 - **W / D / L:** 27% / 45% / 27%
 - **lambda_home / lambda_away:** 0.52 / 0.52
 - **Top scorelines:**
@@ -115,7 +100,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### None vs None - Wed 15 Jul 19:00 UTC
 
 - **Stage:** SF
-- **Recommended pick (EV-optimal):** 0-0 (EV ~ 3.00 pts)
+- **Recommended pick (EV-optimal):** 0-0 (EV ~ 2.99 pts)
 - **W / D / L:** 27% / 45% / 27%
 - **lambda_home / lambda_away:** 0.52 / 0.52
 - **Top scorelines:**
@@ -130,7 +115,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### None vs None - Sat 18 Jul 21:00 UTC
 
 - **Stage:** F
-- **Recommended pick (EV-optimal):** 0-0 (EV ~ 3.00 pts)
+- **Recommended pick (EV-optimal):** 0-0 (EV ~ 2.99 pts)
 - **W / D / L:** 27% / 45% / 27%
 - **lambda_home / lambda_away:** 0.52 / 0.52
 - **Top scorelines:**
@@ -145,7 +130,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### None vs None - Sun 19 Jul 19:00 UTC
 
 - **Stage:** F
-- **Recommended pick (EV-optimal):** 0-0 (EV ~ 3.00 pts)
+- **Recommended pick (EV-optimal):** 0-0 (EV ~ 2.99 pts)
 - **W / D / L:** 27% / 45% / 27%
 - **lambda_home / lambda_away:** 0.52 / 0.52
 - **Top scorelines:**
