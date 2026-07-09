@@ -15,7 +15,7 @@
   "lambda_away": 5.134,
   "w_d_l": {
     "win": 0.0004,
-    "draw": 0.0077,
+    "draw": 0.0078,
     "loss": 0.9918
   },
   "top_scorelines": [
@@ -150,5 +150,5 @@
     ]
   ],
   "rationale": "ENG is the clear favourite. Recent form (last 5): NOR 2 wins, 2 draws, 1 loss; ENG 3 wins, 1 draw, 1 loss. Past 3 meetings: drew 1, ENG won 2. Model gives NOR 0%, draw 1%, ENG 99%.",
-  "generated_at": "2026-07-08T20:44:18.388854+00:00"
+  "generated_at": "2026-07-09T09:09:31.068885+00:00"
 }
