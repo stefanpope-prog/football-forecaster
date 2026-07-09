@@ -38,7 +38,7 @@
         0,
         6
       ],
-      "prob": 0.1541
+      "prob": 0.154
     },
     {
       "score": [
@@ -50,15 +50,15 @@
   ],
   "score_grid": [
     [
-      0.00602,
+      0.00603,
       0.03113,
-      0.07983,
-      0.13661,
-      0.17534,
+      0.07984,
+      0.13662,
+      0.17535,
       0.18004,
-      0.15406,
-      0.11299,
-      0.07251
+      0.15405,
+      0.11298,
+      0.0725
     ],
     [
       0.00035,
@@ -150,5 +150,5 @@
     ]
   ],
   "rationale": "ENG is the clear favourite. Recent form (last 5): NOR 2 wins, 2 draws, 1 loss; ENG 3 wins, 1 draw, 1 loss. Past 3 meetings: drew 1, ENG won 2. Model gives NOR 0%, draw 1%, ENG 99%.",
-  "generated_at": "2026-07-09T17:29:19.927693+00:00"
+  "generated_at": "2026-07-09T22:54:52.527004+00:00"
 }

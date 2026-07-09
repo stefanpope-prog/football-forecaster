@@ -24,7 +24,7 @@
         0,
         0
       ],
-      "prob": 0.3509
+      "prob": 0.351
     },
     {
       "score": [
@@ -50,8 +50,8 @@
   ],
   "score_grid": [
     [
-      0.35094,
-      0.18568,
+      0.35097,
+      0.18567,
       0.04786,
       0.00831,
       0.00108,
@@ -61,7 +61,7 @@
       0.0
     ],
     [
-      0.18568,
+      0.18567,
       0.09383,
       0.02493,
       0.00433,
@@ -150,5 +150,5 @@
     ]
   ],
   "rationale": "None and None look evenly matched. Recent form (last 5): None no recent matches; None no recent matches. Model gives None 27%, draw 45%, None 27%.",
-  "generated_at": "2026-07-09T17:29:19.929208+00:00"
+  "generated_at": "2026-07-09T22:54:52.528528+00:00"
 }

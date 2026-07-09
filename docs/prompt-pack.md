@@ -1,6 +1,6 @@
 # Football Forecaster - Prompt Pack
 
-Generated 2026-07-09 17:29 UTC. Paste this whole document into Claude Chat, then ask any question about the upcoming fixtures.
+Generated 2026-07-09 22:54 UTC. Paste this whole document into Claude Chat, then ask any question about the upcoming fixtures.
 
 ## System prompt for Claude
 
@@ -20,21 +20,6 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ---
 
 ## Fixtures
-
-
-### FRA vs MAR - Thu 09 Jul 20:00 UTC
-
-- **Stage:** QF
-- **Recommended pick (EV-optimal):** 1-0 (EV ~ 3.91 pts)
-- **W / D / L:** 83% / 15% / 2%
-- **lambda_home / lambda_away:** 2.02 / 0.13
-- **Top scorelines:**
-  - 2:0 (24%)
-  - 1:0 (24%)
-  - 3:0 (16%)
-  - 0:0 (12%)
-
-- **Why:** FRA is the clear favourite. Recent form (last 5): FRA 3 wins, 1 draw, 1 loss; MAR 2 wins, 3 draws. Past 3 meetings: FRA won 2, drew 1. Model gives FRA 83%, draw 15%, MAR 2%.
 
 
 ### ESP vs BEL - Fri 10 Jul 19:00 UTC
