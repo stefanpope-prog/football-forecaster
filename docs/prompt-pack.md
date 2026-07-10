@@ -1,6 +1,6 @@
 # Football Forecaster - Prompt Pack
 
-Generated 2026-07-10 17:30 UTC. Paste this whole document into Claude Chat, then ask any question about the upcoming fixtures.
+Generated 2026-07-10 21:40 UTC. Paste this whole document into Claude Chat, then ask any question about the upcoming fixtures.
 
 ## System prompt for Claude
 
@@ -20,21 +20,6 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ---
 
 ## Fixtures
-
-
-### ESP vs BEL - Fri 10 Jul 19:00 UTC
-
-- **Stage:** QF
-- **Recommended pick (EV-optimal):** 2-0 (EV ~ 3.24 pts)
-- **W / D / L:** 77% / 16% / 8%
-- **lambda_home / lambda_away:** 2.62 / 0.75
-- **Top scorelines:**
-  - 2:0 (12%)
-  - 3:0 (10%)
-  - 2:1 (9%)
-  - 1:0 (8%)
-
-- **Why:** ESP is the favourite. Recent form (last 5): ESP 2 wins, 3 draws; BEL 4 wins, 1 draw. Past 3 meetings: ESP won 3. Model gives ESP 77%, draw 16%, BEL 8%.
 
 
 ### NOR vs ENG - Sat 11 Jul 21:00 UTC
