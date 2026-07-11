@@ -1,6 +1,6 @@
 # Football Forecaster - Prompt Pack
 
-Generated 2026-07-10 21:40 UTC. Paste this whole document into Claude Chat, then ask any question about the upcoming fixtures.
+Generated 2026-07-11 06:27 UTC. Paste this whole document into Claude Chat, then ask any question about the upcoming fixtures.
 
 ## System prompt for Claude
 
@@ -52,19 +52,19 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 - **Why:** ARG is the clear favourite. Recent form (last 5): ARG 4 wins, 1 loss; SUI 2 wins, 2 draws, 1 loss. Past 3 meetings: ARG won 2, drew 1. Model gives ARG 99%, draw 1%, SUI 0%.
 
 
-### FRA vs None - Tue 14 Jul 19:00 UTC
+### FRA vs ESP - Tue 14 Jul 19:00 UTC
 
 - **Stage:** SF
-- **Recommended pick (EV-optimal):** 8-0 (EV ~ 5.55 pts)
-- **W / D / L:** 100% / 0% / 0%
-- **lambda_home / lambda_away:** 42.59 / 0.05
+- **Recommended pick (EV-optimal):** 1-0 (EV ~ 2.56 pts)
+- **W / D / L:** 56% / 24% / 19%
+- **lambda_home / lambda_away:** 1.89 / 1.04
 - **Top scorelines:**
-  - 8:0 (78%)
-  - 7:0 (15%)
-  - 8:1 (4%)
-  - 6:0 (2%)
+  - 1:1 (12%)
+  - 2:1 (10%)
+  - 2:0 (10%)
+  - 1:0 (9%)
 
-- **Why:** FRA is the heavy favourite. Recent form (last 5): FRA 3 wins, 1 draw, 1 loss; None no recent matches. Model gives FRA 100%, draw 0%, None 0%.
+- **Why:** slight edge to FRA. Recent form (last 5): FRA 3 wins, 1 draw, 1 loss; ESP 2 wins, 3 draws. Past 3 meetings: FRA won 1, ESP won 2. Model gives FRA 56%, draw 24%, ESP 19%.
 
 
 ### None vs None - Wed 15 Jul 19:00 UTC
