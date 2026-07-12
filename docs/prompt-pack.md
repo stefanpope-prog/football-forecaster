@@ -1,6 +1,6 @@
 # Football Forecaster - Prompt Pack
 
-Generated 2026-07-11 22:55 UTC. Paste this whole document into Claude Chat, then ask any question about the upcoming fixtures.
+Generated 2026-07-12 00:01 UTC. Paste this whole document into Claude Chat, then ask any question about the upcoming fixtures.
 
 ## System prompt for Claude
 
@@ -25,31 +25,16 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### MEX vs ENG - Mon 06 Jul 01:00 UTC
 
 - **Stage:** R16
-- **Recommended pick (EV-optimal):** 0-3 (EV ~ 3.68 pts)
-- **W / D / L:** 2% / 8% / 90%
-- **lambda_home / lambda_away:** 0.56 / 3.53
+- **Recommended pick (EV-optimal):** 0-3 (EV ~ 3.70 pts)
+- **W / D / L:** 2% / 7% / 90%
+- **lambda_home / lambda_away:** 0.55 / 3.58
 - **Top scorelines:**
-  - 0:3 (12%)
+  - 0:3 (13%)
   - 0:4 (11%)
-  - 0:2 (11%)
+  - 0:2 (10%)
   - 0:5 (8%)
 
-- **Why:** ENG is the favourite. Recent form (last 5): MEX 4 wins, 1 draw; ENG 3 wins, 1 draw, 1 loss. Past 3 meetings: ENG won 3. Model gives MEX 2%, draw 8%, ENG 90%.
-
-
-### NOR vs ENG - Sat 11 Jul 21:00 UTC
-
-- **Stage:** QF
-- **Recommended pick (EV-optimal):** 0-8 (EV ~ 4.72 pts)
-- **W / D / L:** 0% / 0% / 100%
-- **lambda_home / lambda_away:** 0.15 / 13.14
-- **Top scorelines:**
-  - 0:8 (40%)
-  - 0:7 (24%)
-  - 0:6 (13%)
-  - 1:8 (6%)
-
-- **Why:** ENG is the clear favourite. Recent form (last 5): NOR 2 wins, 2 draws, 1 loss; ENG 3 wins, 1 draw, 1 loss. Past 3 meetings: drew 1, ENG won 2. Model gives NOR 0%, draw 0%, ENG 100%.
+- **Why:** ENG is the favourite. Recent form (last 5): MEX 4 wins, 1 draw; ENG 3 wins, 1 draw, 1 loss. Past 3 meetings: ENG won 3. Model gives MEX 2%, draw 7%, ENG 90%.
 
 
 ### ARG vs SUI - Sun 12 Jul 01:00 UTC
@@ -57,10 +42,10 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 - **Stage:** QF
 - **Recommended pick (EV-optimal):** 5-0 (EV ~ 4.07 pts)
 - **W / D / L:** 99% / 1% / 0%
-- **lambda_home / lambda_away:** 6.01 / 0.33
+- **lambda_home / lambda_away:** 5.99 / 0.33
 - **Top scorelines:**
-  - 6:0 (14%)
   - 5:0 (14%)
+  - 6:0 (14%)
   - 7:0 (12%)
   - 4:0 (11%)
 
@@ -72,7 +57,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 - **Stage:** SF
 - **Recommended pick (EV-optimal):** 1-0 (EV ~ 2.56 pts)
 - **W / D / L:** 56% / 24% / 19%
-- **lambda_home / lambda_away:** 1.89 / 1.04
+- **lambda_home / lambda_away:** 1.89 / 1.03
 - **Top scorelines:**
   - 1:1 (12%)
   - 2:1 (10%)
@@ -85,7 +70,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### None vs None - Wed 15 Jul 19:00 UTC
 
 - **Stage:** SF
-- **Recommended pick (EV-optimal):** 1-0 (EV ~ 1.87 pts)
+- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
 - **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**
@@ -100,7 +85,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### None vs None - Sat 18 Jul 21:00 UTC
 
 - **Stage:** F
-- **Recommended pick (EV-optimal):** 1-0 (EV ~ 1.87 pts)
+- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
 - **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**
@@ -115,7 +100,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### None vs None - Sun 19 Jul 19:00 UTC
 
 - **Stage:** F
-- **Recommended pick (EV-optimal):** 1-0 (EV ~ 1.87 pts)
+- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
 - **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**
