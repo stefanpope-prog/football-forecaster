@@ -1,6 +1,6 @@
 # Football Forecaster - Prompt Pack
 
-Generated 2026-07-12 00:01 UTC. Paste this whole document into Claude Chat, then ask any question about the upcoming fixtures.
+Generated 2026-07-12 06:38 UTC. Paste this whole document into Claude Chat, then ask any question about the upcoming fixtures.
 
 ## System prompt for Claude
 
@@ -22,42 +22,12 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ## Fixtures
 
 
-### MEX vs ENG - Mon 06 Jul 01:00 UTC
-
-- **Stage:** R16
-- **Recommended pick (EV-optimal):** 0-3 (EV ~ 3.70 pts)
-- **W / D / L:** 2% / 7% / 90%
-- **lambda_home / lambda_away:** 0.55 / 3.58
-- **Top scorelines:**
-  - 0:3 (13%)
-  - 0:4 (11%)
-  - 0:2 (10%)
-  - 0:5 (8%)
-
-- **Why:** ENG is the favourite. Recent form (last 5): MEX 4 wins, 1 draw; ENG 3 wins, 1 draw, 1 loss. Past 3 meetings: ENG won 3. Model gives MEX 2%, draw 7%, ENG 90%.
-
-
-### ARG vs SUI - Sun 12 Jul 01:00 UTC
-
-- **Stage:** QF
-- **Recommended pick (EV-optimal):** 5-0 (EV ~ 4.07 pts)
-- **W / D / L:** 99% / 1% / 0%
-- **lambda_home / lambda_away:** 5.99 / 0.33
-- **Top scorelines:**
-  - 5:0 (14%)
-  - 6:0 (14%)
-  - 7:0 (12%)
-  - 4:0 (11%)
-
-- **Why:** ARG is the clear favourite. Recent form (last 5): ARG 4 wins, 1 loss; SUI 2 wins, 2 draws, 1 loss. Past 3 meetings: ARG won 2, drew 1. Model gives ARG 99%, draw 1%, SUI 0%.
-
-
 ### FRA vs ESP - Tue 14 Jul 19:00 UTC
 
 - **Stage:** SF
 - **Recommended pick (EV-optimal):** 1-0 (EV ~ 2.56 pts)
 - **W / D / L:** 56% / 24% / 19%
-- **lambda_home / lambda_away:** 1.89 / 1.03
+- **lambda_home / lambda_away:** 1.89 / 1.04
 - **Top scorelines:**
   - 1:1 (12%)
   - 2:1 (10%)
@@ -67,25 +37,25 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 - **Why:** slight edge to FRA. Recent form (last 5): FRA 3 wins, 1 draw, 1 loss; ESP 2 wins, 3 draws. Past 3 meetings: FRA won 1, ESP won 2. Model gives FRA 56%, draw 24%, ESP 19%.
 
 
-### None vs None - Wed 15 Jul 19:00 UTC
+### ENG vs ARG - Wed 15 Jul 19:00 UTC
 
 - **Stage:** SF
-- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
-- **W / D / L:** 36% / 28% / 36%
-- **lambda_home / lambda_away:** 1.40 / 1.40
+- **Recommended pick (EV-optimal):** 0-2 (EV ~ 3.37 pts)
+- **W / D / L:** 6% / 14% / 80%
+- **lambda_home / lambda_away:** 0.70 / 2.81
 - **Top scorelines:**
-  - 1:1 (13%)
-  - 2:1 (8%)
+  - 0:2 (12%)
+  - 0:3 (11%)
   - 1:2 (8%)
-  - 1:0 (7%)
+  - 0:1 (8%)
 
-- **Why:** None and None look evenly matched. Recent form (last 5): None no recent matches; None no recent matches. Model gives None 36%, draw 28%, None 36%.
+- **Why:** ARG is the favourite. Recent form (last 5): ENG 3 wins, 1 draw, 1 loss; ARG 4 wins, 1 loss. Past 3 meetings: ENG won 2, drew 1. Model gives ENG 6%, draw 14%, ARG 80%.
 
 
 ### None vs None - Sat 18 Jul 21:00 UTC
 
 - **Stage:** F
-- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
+- **Recommended pick (EV-optimal):** 1-0 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
 - **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**
@@ -100,7 +70,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### None vs None - Sun 19 Jul 19:00 UTC
 
 - **Stage:** F
-- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
+- **Recommended pick (EV-optimal):** 1-0 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
 - **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**
