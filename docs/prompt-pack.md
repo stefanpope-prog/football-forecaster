@@ -1,6 +1,6 @@
 # Football Forecaster - Prompt Pack
 
-Generated 2026-07-12 06:38 UTC. Paste this whole document into Claude Chat, then ask any question about the upcoming fixtures.
+Generated 2026-07-13 00:05 UTC. Paste this whole document into Claude Chat, then ask any question about the upcoming fixtures.
 
 ## System prompt for Claude
 
@@ -26,28 +26,28 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 
 - **Stage:** SF
 - **Recommended pick (EV-optimal):** 1-0 (EV ~ 2.56 pts)
-- **W / D / L:** 56% / 24% / 19%
-- **lambda_home / lambda_away:** 1.89 / 1.04
+- **W / D / L:** 56% / 25% / 19%
+- **lambda_home / lambda_away:** 1.84 / 1.01
 - **Top scorelines:**
   - 1:1 (12%)
   - 2:1 (10%)
   - 2:0 (10%)
-  - 1:0 (9%)
+  - 1:0 (10%)
 
-- **Why:** slight edge to FRA. Recent form (last 5): FRA 3 wins, 1 draw, 1 loss; ESP 2 wins, 3 draws. Past 3 meetings: FRA won 1, ESP won 2. Model gives FRA 56%, draw 24%, ESP 19%.
+- **Why:** slight edge to FRA. Recent form (last 5): FRA 3 wins, 1 draw, 1 loss; ESP 2 wins, 3 draws. Past 3 meetings: FRA won 1, ESP won 2. Model gives FRA 56%, draw 25%, ESP 19%.
 
 
 ### ENG vs ARG - Wed 15 Jul 19:00 UTC
 
 - **Stage:** SF
-- **Recommended pick (EV-optimal):** 0-2 (EV ~ 3.37 pts)
+- **Recommended pick (EV-optimal):** 0-2 (EV ~ 3.36 pts)
 - **W / D / L:** 6% / 14% / 80%
-- **lambda_home / lambda_away:** 0.70 / 2.81
+- **lambda_home / lambda_away:** 0.68 / 2.74
 - **Top scorelines:**
   - 0:2 (12%)
   - 0:3 (11%)
-  - 1:2 (8%)
   - 0:1 (8%)
+  - 1:2 (8%)
 
 - **Why:** ARG is the favourite. Recent form (last 5): ENG 3 wins, 1 draw, 1 loss; ARG 4 wins, 1 loss. Past 3 meetings: ENG won 2, drew 1. Model gives ENG 6%, draw 14%, ARG 80%.
 
@@ -57,12 +57,12 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 - **Stage:** F
 - **Recommended pick (EV-optimal):** 1-0 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
-- **lambda_home / lambda_away:** 1.40 / 1.40
+- **lambda_home / lambda_away:** 1.36 / 1.36
 - **Top scorelines:**
   - 1:1 (13%)
   - 2:1 (8%)
   - 1:2 (8%)
-  - 1:0 (7%)
+  - 1:0 (8%)
 
 - **Why:** None and None look evenly matched. Recent form (last 5): None no recent matches; None no recent matches. Model gives None 36%, draw 28%, None 36%.
 
@@ -72,12 +72,12 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 - **Stage:** F
 - **Recommended pick (EV-optimal):** 1-0 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
-- **lambda_home / lambda_away:** 1.40 / 1.40
+- **lambda_home / lambda_away:** 1.36 / 1.36
 - **Top scorelines:**
   - 1:1 (13%)
   - 2:1 (8%)
   - 1:2 (8%)
-  - 1:0 (7%)
+  - 1:0 (8%)
 
 - **Why:** None and None look evenly matched. Recent form (last 5): None no recent matches; None no recent matches. Model gives None 36%, draw 28%, None 36%.
 
