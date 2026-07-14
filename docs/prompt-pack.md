@@ -1,6 +1,6 @@
 # Football Forecaster - Prompt Pack
 
-Generated 2026-07-14 21:04 UTC. Paste this whole document into Claude Chat, then ask any question about the upcoming fixtures.
+Generated 2026-07-14 23:00 UTC. Paste this whole document into Claude Chat, then ask any question about the upcoming fixtures.
 
 ## System prompt for Claude
 
@@ -22,21 +22,6 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ## Fixtures
 
 
-### FRA vs ESP - Tue 14 Jul 19:00 UTC
-
-- **Stage:** SF
-- **Recommended pick (EV-optimal):** 1-0 (EV ~ 2.56 pts)
-- **W / D / L:** 56% / 24% / 19%
-- **lambda_home / lambda_away:** 1.89 / 1.04
-- **Top scorelines:**
-  - 1:1 (12%)
-  - 2:1 (10%)
-  - 2:0 (10%)
-  - 1:0 (9%)
-
-- **Why:** slight edge to FRA. Recent form (last 5): FRA 3 wins, 1 draw, 1 loss; ESP 2 wins, 3 draws. Past 3 meetings: FRA won 1, ESP won 2. Model gives FRA 56%, draw 24%, ESP 19%.
-
-
 ### ENG vs ARG - Wed 15 Jul 19:00 UTC
 
 - **Stage:** SF
@@ -55,7 +40,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### None vs None - Sat 18 Jul 21:00 UTC
 
 - **Stage:** F
-- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
+- **Recommended pick (EV-optimal):** 1-0 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
 - **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**
@@ -70,7 +55,7 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### None vs None - Sun 19 Jul 19:00 UTC
 
 - **Stage:** F
-- **Recommended pick (EV-optimal):** 0-1 (EV ~ 1.87 pts)
+- **Recommended pick (EV-optimal):** 1-0 (EV ~ 1.87 pts)
 - **W / D / L:** 36% / 28% / 36%
 - **lambda_home / lambda_away:** 1.40 / 1.40
 - **Top scorelines:**
