@@ -1,6 +1,6 @@
 # Football Forecaster - Prompt Pack
 
-Generated 2026-07-14 23:00 UTC. Paste this whole document into Claude Chat, then ask any question about the upcoming fixtures.
+Generated 2026-07-15 00:04 UTC. Paste this whole document into Claude Chat, then ask any question about the upcoming fixtures.
 
 ## System prompt for Claude
 
@@ -25,44 +25,44 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### ENG vs ARG - Wed 15 Jul 19:00 UTC
 
 - **Stage:** SF
-- **Recommended pick (EV-optimal):** 0-2 (EV ~ 3.37 pts)
-- **W / D / L:** 6% / 14% / 80%
-- **lambda_home / lambda_away:** 0.70 / 2.81
+- **Recommended pick (EV-optimal):** 0-1 (EV ~ 3.14 pts)
+- **W / D / L:** 9% / 35% / 56%
+- **lambda_home / lambda_away:** 0.26 / 1.04
 - **Top scorelines:**
-  - 0:2 (12%)
-  - 0:3 (11%)
-  - 1:2 (8%)
-  - 0:1 (8%)
+  - 0:1 (29%)
+  - 0:0 (27%)
+  - 0:2 (15%)
+  - 1:0 (7%)
 
-- **Why:** ARG is the favourite. Recent form (last 5): ENG 3 wins, 1 draw, 1 loss; ARG 4 wins, 1 loss. Past 3 meetings: ENG won 2, drew 1. Model gives ENG 6%, draw 14%, ARG 80%.
+- **Why:** ARG is the favourite. Recent form (last 5): ENG 3 wins, 1 draw, 1 loss; ARG 4 wins, 1 loss. Past 3 meetings: ENG won 2, drew 1. Model gives ENG 9%, draw 35%, ARG 56%.
 
 
 ### None vs None - Sat 18 Jul 21:00 UTC
 
 - **Stage:** F
-- **Recommended pick (EV-optimal):** 1-0 (EV ~ 1.87 pts)
-- **W / D / L:** 36% / 28% / 36%
-- **lambda_home / lambda_away:** 1.40 / 1.40
+- **Recommended pick (EV-optimal):** 0-0 (EV ~ 3.01 pts)
+- **W / D / L:** 27% / 45% / 27%
+- **lambda_home / lambda_away:** 0.52 / 0.52
 - **Top scorelines:**
-  - 1:1 (13%)
-  - 2:1 (8%)
-  - 1:2 (8%)
-  - 1:0 (7%)
+  - 0:0 (35%)
+  - 1:0 (19%)
+  - 0:1 (19%)
+  - 1:1 (9%)
 
-- **Why:** None and None look evenly matched. Recent form (last 5): None no recent matches; None no recent matches. Model gives None 36%, draw 28%, None 36%.
+- **Why:** None and None look evenly matched. Recent form (last 5): None no recent matches; None no recent matches. Model gives None 27%, draw 45%, None 27%.
 
 
 ### None vs None - Sun 19 Jul 19:00 UTC
 
 - **Stage:** F
-- **Recommended pick (EV-optimal):** 1-0 (EV ~ 1.87 pts)
-- **W / D / L:** 36% / 28% / 36%
-- **lambda_home / lambda_away:** 1.40 / 1.40
+- **Recommended pick (EV-optimal):** 0-0 (EV ~ 3.01 pts)
+- **W / D / L:** 27% / 45% / 27%
+- **lambda_home / lambda_away:** 0.52 / 0.52
 - **Top scorelines:**
-  - 1:1 (13%)
-  - 2:1 (8%)
-  - 1:2 (8%)
-  - 1:0 (7%)
+  - 0:0 (35%)
+  - 1:0 (19%)
+  - 0:1 (19%)
+  - 1:1 (9%)
 
-- **Why:** None and None look evenly matched. Recent form (last 5): None no recent matches; None no recent matches. Model gives None 36%, draw 28%, None 36%.
+- **Why:** None and None look evenly matched. Recent form (last 5): None no recent matches; None no recent matches. Model gives None 27%, draw 45%, None 27%.
 
