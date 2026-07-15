@@ -1,6 +1,6 @@
 # Football Forecaster - Prompt Pack
 
-Generated 2026-07-15 04:11 UTC. Paste this whole document into Claude Chat, then ask any question about the upcoming fixtures.
+Generated 2026-07-15 07:21 UTC. Paste this whole document into Claude Chat, then ask any question about the upcoming fixtures.
 
 ## System prompt for Claude
 
@@ -37,32 +37,32 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 - **Why:** ARG is the favourite. Recent form (last 5): ENG 3 wins, 1 draw, 1 loss; ARG 4 wins, 1 loss. Past 3 meetings: ENG won 2, drew 1. Model gives ENG 9%, draw 35%, ARG 56%.
 
 
-### None vs None - Sat 18 Jul 21:00 UTC
+### FRA vs None - Sat 18 Jul 21:00 UTC
 
 - **Stage:** F
-- **Recommended pick (EV-optimal):** 0-0 (EV ~ 3.01 pts)
-- **W / D / L:** 27% / 45% / 27%
-- **lambda_home / lambda_away:** 0.52 / 0.52
+- **Recommended pick (EV-optimal):** 8-0 (EV ~ 4.97 pts)
+- **W / D / L:** 100% / 0% / 0%
+- **lambda_home / lambda_away:** 14.20 / 0.02
 - **Top scorelines:**
-  - 0:0 (35%)
-  - 1:0 (19%)
-  - 0:1 (19%)
-  - 1:1 (9%)
+  - 8:0 (49%)
+  - 7:0 (27%)
+  - 6:0 (14%)
+  - 5:0 (6%)
 
-- **Why:** None and None look evenly matched. Recent form (last 5): None no recent matches; None no recent matches. Model gives None 27%, draw 45%, None 27%.
+- **Why:** FRA is the heavy favourite. Recent form (last 5): FRA 3 wins, 1 draw, 1 loss; None no recent matches. Model gives FRA 100%, draw 0%, None 0%.
 
 
-### None vs None - Sun 19 Jul 19:00 UTC
+### ESP vs None - Sun 19 Jul 19:00 UTC
 
 - **Stage:** F
-- **Recommended pick (EV-optimal):** 0-0 (EV ~ 3.01 pts)
-- **W / D / L:** 27% / 45% / 27%
-- **lambda_home / lambda_away:** 0.52 / 0.52
+- **Recommended pick (EV-optimal):** 8-0 (EV ~ 4.87 pts)
+- **W / D / L:** 100% / 0% / 0%
+- **lambda_home / lambda_away:** 12.82 / 0.02
 - **Top scorelines:**
-  - 0:0 (35%)
-  - 1:0 (19%)
-  - 0:1 (19%)
-  - 1:1 (9%)
+  - 8:0 (44%)
+  - 7:0 (28%)
+  - 6:0 (15%)
+  - 5:0 (7%)
 
-- **Why:** None and None look evenly matched. Recent form (last 5): None no recent matches; None no recent matches. Model gives None 27%, draw 45%, None 27%.
+- **Why:** ESP is the heavy favourite. Recent form (last 5): ESP 2 wins, 3 draws; None no recent matches. Model gives ESP 100%, draw 0%, None 0%.
 
