@@ -1,6 +1,6 @@
 # Football Forecaster - Prompt Pack
 
-Generated 2026-07-15 18:14 UTC. Paste this whole document into Claude Chat, then ask any question about the upcoming fixtures.
+Generated 2026-07-16 00:02 UTC. Paste this whole document into Claude Chat, then ask any question about the upcoming fixtures.
 
 ## System prompt for Claude
 
@@ -22,32 +22,17 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ## Fixtures
 
 
-### ENG vs ARG - Wed 15 Jul 19:00 UTC
-
-- **Stage:** SF
-- **Recommended pick (EV-optimal):** 0-1 (EV ~ 3.14 pts)
-- **W / D / L:** 9% / 35% / 56%
-- **lambda_home / lambda_away:** 0.26 / 1.04
-- **Top scorelines:**
-  - 0:1 (29%)
-  - 0:0 (27%)
-  - 0:2 (15%)
-  - 1:0 (7%)
-
-- **Why:** ARG is the favourite. Recent form (last 5): ENG 3 wins, 1 draw, 1 loss; ARG 4 wins, 1 loss. Past 3 meetings: ENG won 2, drew 1. Model gives ENG 9%, draw 35%, ARG 56%.
-
-
 ### FRA vs None - Sat 18 Jul 21:00 UTC
 
 - **Stage:** F
-- **Recommended pick (EV-optimal):** 8-0 (EV ~ 4.97 pts)
+- **Recommended pick (EV-optimal):** 8-0 (EV ~ 5.51 pts)
 - **W / D / L:** 100% / 0% / 0%
-- **lambda_home / lambda_away:** 14.20 / 0.02
+- **lambda_home / lambda_away:** 38.57 / 0.05
 - **Top scorelines:**
-  - 8:0 (49%)
-  - 7:0 (27%)
-  - 6:0 (14%)
-  - 5:0 (6%)
+  - 8:0 (76%)
+  - 7:0 (16%)
+  - 8:1 (4%)
+  - 6:0 (3%)
 
 - **Why:** FRA is the heavy favourite. Recent form (last 5): FRA 3 wins, 1 draw, 1 loss; None no recent matches. Model gives FRA 100%, draw 0%, None 0%.
 
@@ -55,14 +40,14 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### ESP vs None - Sun 19 Jul 19:00 UTC
 
 - **Stage:** F
-- **Recommended pick (EV-optimal):** 8-0 (EV ~ 4.87 pts)
+- **Recommended pick (EV-optimal):** 8-0 (EV ~ 5.46 pts)
 - **W / D / L:** 100% / 0% / 0%
-- **lambda_home / lambda_away:** 12.82 / 0.02
+- **lambda_home / lambda_away:** 34.81 / 0.06
 - **Top scorelines:**
-  - 8:0 (44%)
-  - 7:0 (28%)
-  - 6:0 (15%)
-  - 5:0 (7%)
+  - 8:0 (74%)
+  - 7:0 (17%)
+  - 8:1 (4%)
+  - 6:0 (3%)
 
 - **Why:** ESP is the heavy favourite. Recent form (last 5): ESP 2 wins, 3 draws; None no recent matches. Model gives ESP 100%, draw 0%, None 0%.
 
