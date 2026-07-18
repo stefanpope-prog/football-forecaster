@@ -1,6 +1,6 @@
 # Football Forecaster - Prompt Pack
 
-Generated 2026-07-18 00:00 UTC. Paste this whole document into Claude Chat, then ask any question about the upcoming fixtures.
+Generated 2026-07-18 03:23 UTC. Paste this whole document into Claude Chat, then ask any question about the upcoming fixtures.
 
 ## System prompt for Claude
 
@@ -25,29 +25,29 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ### FRA vs ENG - Sat 18 Jul 21:00 UTC
 
 - **Stage:** F
-- **Recommended pick (EV-optimal):** 1-0 (EV ~ 2.57 pts)
-- **W / D / L:** 56% / 24% / 19%
-- **lambda_home / lambda_away:** 1.88 / 1.02
+- **Recommended pick (EV-optimal):** 0-0 (EV ~ 2.91 pts)
+- **W / D / L:** 39% / 43% / 18%
+- **lambda_home / lambda_away:** 0.70 / 0.38
 - **Top scorelines:**
-  - 1:1 (12%)
-  - 2:1 (10%)
-  - 2:0 (10%)
-  - 1:0 (9%)
+  - 0:0 (34%)
+  - 1:0 (24%)
+  - 0:1 (13%)
+  - 1:1 (9%)
 
-- **Why:** slight edge to FRA. Recent form (last 5): FRA 3 wins, 1 draw, 1 loss; ENG 3 wins, 1 draw, 1 loss. Past 3 meetings: FRA won 2, ENG won 1. Model gives FRA 56%, draw 24%, ENG 19%.
+- **Why:** slight edge to FRA. Recent form (last 5): FRA 3 wins, 1 draw, 1 loss; ENG 3 wins, 1 draw, 1 loss. Past 3 meetings: FRA won 2, ENG won 1. Model gives FRA 39%, draw 43%, ENG 18%.
 
 
 ### ESP vs ARG - Sun 19 Jul 19:00 UTC
 
 - **Stage:** F
-- **Recommended pick (EV-optimal):** 0-2 (EV ~ 3.21 pts)
-- **W / D / L:** 8% / 16% / 75%
-- **lambda_home / lambda_away:** 0.75 / 2.54
+- **Recommended pick (EV-optimal):** 0-1 (EV ~ 2.99 pts)
+- **W / D / L:** 11% / 37% / 52%
+- **lambda_home / lambda_away:** 0.28 / 0.95
 - **Top scorelines:**
-  - 0:2 (12%)
-  - 0:3 (10%)
-  - 1:2 (9%)
-  - 0:1 (9%)
+  - 0:0 (29%)
+  - 0:1 (28%)
+  - 0:2 (13%)
+  - 1:0 (8%)
 
-- **Why:** ARG is the favourite. Recent form (last 5): ESP 2 wins, 3 draws; ARG 4 wins, 1 loss. Past 3 meetings: ESP won 2, ARG won 1. Model gives ESP 8%, draw 16%, ARG 75%.
+- **Why:** ARG is the favourite. Recent form (last 5): ESP 2 wins, 3 draws; ARG 4 wins, 1 loss. Past 3 meetings: ESP won 2, ARG won 1. Model gives ESP 11%, draw 37%, ARG 52%.
 
