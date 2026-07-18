@@ -5,7 +5,10 @@
   "away": "ENG",
   "stage": "F",
   "status": "SCHEDULED",
-  "actual": null,
+  "actual": [
+    0,
+    4
+  ],
   "recommended_pick": [
     0,
     0
@@ -150,5 +153,5 @@
     ]
   ],
   "rationale": "slight edge to FRA. Recent form (last 5): FRA 3 wins, 1 draw, 1 loss; ENG 3 wins, 1 draw, 1 loss. Past 3 meetings: FRA won 2, ENG won 1. Model gives FRA 39%, draw 43%, ENG 18%.",
-  "generated_at": "2026-07-18T20:58:26.111642+00:00"
+  "generated_at": "2026-07-18T21:58:12.555431+00:00"
 }
