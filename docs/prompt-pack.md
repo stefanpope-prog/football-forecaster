@@ -1,6 +1,6 @@
 # Football Forecaster - Prompt Pack
 
-Generated 2026-07-19 18:03 UTC. Paste this whole document into Claude Chat, then ask any question about the upcoming fixtures.
+Generated 2026-07-20 06:53 UTC. Paste this whole document into Claude Chat, then ask any question about the upcoming fixtures.
 
 ## System prompt for Claude
 
@@ -20,19 +20,4 @@ When I ask about a specific match, look it up below. When I ask "which is safer"
 ---
 
 ## Fixtures
-
-
-### ESP vs ARG - Sun 19 Jul 19:00 UTC
-
-- **Stage:** F
-- **Recommended pick (EV-optimal):** 0-1 (EV ~ 2.99 pts)
-- **W / D / L:** 11% / 38% / 52%
-- **lambda_home / lambda_away:** 0.28 / 0.94
-- **Top scorelines:**
-  - 0:0 (29%)
-  - 0:1 (28%)
-  - 0:2 (13%)
-  - 1:0 (8%)
-
-- **Why:** ARG is the favourite. Recent form (last 5): ESP 2 wins, 3 draws; ARG 4 wins, 1 loss. Past 3 meetings: ESP won 2, ARG won 1. Model gives ESP 11%, draw 38%, ARG 52%.
 
